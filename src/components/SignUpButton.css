@@ -1,0 +1,12 @@
+.SignUp {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 2%;
+}
+
+.SignUp:hover {
+    color: blue;
+    background-color: white;
+    border-radius: 5%;
+}

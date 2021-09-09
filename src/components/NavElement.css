@@ -1,0 +1,15 @@
+.NavElement {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: blue;
+    font-weight: bolder;
+}
+
+.NavElement:hover {
+    background-color: blue;
+    color: white;
+}

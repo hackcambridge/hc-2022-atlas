@@ -1,0 +1,15 @@
+.Nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Nav > * {
+    padding: 2.5%;
+    white-space: nowrap;
+}
+
+.Nav > .SignUp {
+    margin-left: 5%;
+}
