@@ -1,6 +1,7 @@
 import React from "react";
 import './Nav.css';
 import NavElement, { NavElementProps } from "./NavElement";
+
 import SignUpButton from "./SignUpButton";
 
 export type NavProps = {elements: NavElementProps[]};

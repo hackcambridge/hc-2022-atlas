@@ -5,5 +5,19 @@
 }
 
 .HC-logo {
-    height: 2vw;
+    height: max(2vw, 50px);
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+@media screen and (max-width:480px) {
+    .HC-logo {
+        height: 50px;
+    }
+
+    h1 {
+        display: none;
+    }
 }

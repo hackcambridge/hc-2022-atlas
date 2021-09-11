@@ -13,3 +13,9 @@
     background-color: blue;
     color: white;
 }
+
+@media only screen and (max-width: 960px) {
+    .NavElement {
+        display: none;
+    }
+}
