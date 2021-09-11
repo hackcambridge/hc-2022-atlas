@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './img/logo.svg';
+import background from './img/worldmap_white.svg';
 import './App.css';
 import Header from './containers/Header';
 import MovingBackground from './containers/MovingBackground';
@@ -29,7 +30,7 @@ function App() {
       </header> */}
       <Header logoPath={logo} navElements={navElements}/>
       <div id="content">
-        <MovingBackground background={logo}>
+        <MovingBackground background={background}>
           {/* TEST BACKGROUND */}
           <div style={{height: "120vh"}}></div>
         </MovingBackground>

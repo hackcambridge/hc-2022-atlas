@@ -1,5 +1,6 @@
 .MovingBackground {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 400vw 400vh;
+    opacity: 30%;
 }
