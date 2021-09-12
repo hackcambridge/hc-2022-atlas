@@ -1,13 +1,14 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { CSSProperties, useCallback, useEffect, useRef, useState } from 'react';
 import './MovingBackground.css';
 
-export const useResize = (myRef: React.RefObject<HTMLElement>) => {
-    const [width, setWidth] = useState(1000)
-    const [height, setHeight] = useState(1000)
+// Hook for dynamic resizing
+export const useResize = () => {
+    const [width, setWidth] = useState(window.innerWidth)
+    const [height, setHeight] = useState(window.innerHeight)
     useEffect(() => {
       const handleResize = () => {
-        setWidth(myRef.current? myRef.current.offsetWidth: 1000)
-        setHeight(myRef.current? myRef.current.offsetHeight: 1000)
+        setWidth(window.innerWidth)
+        setHeight(window.innerHeight)
       }
       handleResize();
       window.addEventListener('resize', handleResize)
@@ -15,10 +16,15 @@ export const useResize = (myRef: React.RefObject<HTMLElement>) => {
       return () => {
         window.removeEventListener('resize', handleResize)
       }
-    }, [myRef])
+    }, [])
     return { width, height }
-}
+};
   
+// Interface for custom css properties
+export interface CustomCSSForMovingBackground extends CSSProperties {
+  '--before-bg-pos': string,
+  '--before-bg-img': string
+}
 
 export type MovingBackgroundProps = {
     children: React.ReactNode;
@@ -28,15 +34,21 @@ export type MovingBackgroundProps = {
 export default function MovingBackground({children, background}: MovingBackgroundProps) {
     const [backgroundPos, setBackgroundPos] = useState([50, 50]);
     const ref = useRef<HTMLDivElement>(null);
-    const { width, height } = useResize(ref);
+    const { width, height } = useResize();
 
     const handleMouseMove = useCallback<React.MouseEventHandler<HTMLDivElement>>((event) => {
-        setBackgroundPos([100-100 * event.clientX / width, 100-100 * event.clientY / height]);
+        setBackgroundPos([(100-100 * event.clientX / width) * 1 / 2 + 25, (100-100 * event.clientY / height) * 9 / 10 + 10]);
     }, [width, height]);
 
+    const getStyle = (beforeBgImage: string, beforeBgPos: Array<number>) => {
+      return {
+        '--before-bg-img': `url(${beforeBgImage})`,
+        '--before-bg-pos': `${beforeBgPos[0]}% ${beforeBgPos[1]}%`
+      } as CustomCSSForMovingBackground;
+    };
+
     return (
-        <div className="MovingBackground" ref={ref} style={{
-            backgroundImage: `url(${background})`, backgroundPosition: `${backgroundPos[0]}% ${backgroundPos[1]}%`}} onMouseMove={handleMouseMove}>
+        <div className="MovingBackground" style={getStyle(background, backgroundPos)} ref={ref} onMouseMove={handleMouseMove}>
             {children}
         </div>
     );

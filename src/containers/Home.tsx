@@ -1,5 +1,6 @@
 import { RouteComponentProps } from "@reach/router";
 import React from "react";
+import Body from "./Body";
 import MovingBackground from "./MovingBackground";
 
 export type HomeProps = {
@@ -10,7 +11,7 @@ export default function Home({background}:HomeProps) {
     return (<div id="content">
         <MovingBackground background={background}>
           {/* TEST BACKGROUND */}
-          <div style={{height: "120vh"}}></div>
+          <Body />
         </MovingBackground>
       </div>);
 }
