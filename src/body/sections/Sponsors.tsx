@@ -1,11 +1,12 @@
 import React from 'react';
+import './Sponsors.css';
 
-export type SectionProps = {
+export type SponsorsProps = {
     name: string;
     className: string
 };
 
-export default function Section({name, className}: SectionProps) {
+export default function Sponsors({name, className}: SponsorsProps) {
     return (
         <div className={className}>
             This is the section of name {name}

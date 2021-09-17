@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './img/logo.svg';
 import background from './img/worldmap_white.svg';
 import './App.css';
-import Header from './containers/Header';
+import Header from './header/containers/Header';
 import {Router} from '@reach/router';
-import Home from './containers/Home';
+import Home from './shared/containers/Home';
 
 function App() {
   const navElements = [

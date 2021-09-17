@@ -7,8 +7,8 @@ export type BodyProp = {
 
 export default function Body({}: BodyProp) {
     return (
-        <div style={{color: 'white', height: "400vh"}}>
-            Something
+        <div className="test">
+            <a href="/">Something</a>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import { RouteComponentProps } from "@reach/router";
 import React from "react";
-import Body from "./Body";
+import Body from "../../body/containers/Body";
 import MovingBackground from "./MovingBackground";
 
 export type HomeProps = {
