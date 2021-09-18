@@ -1,15 +1,12 @@
 import React from 'react';
 import './Sponsors.css';
 
-export type SponsorsProps = {
-    name: string;
-    className: string
-};
+export type SponsorsProps = {};
 
-export default function Sponsors({name, className}: SponsorsProps) {
+export default function Sponsors({}: SponsorsProps) {
     return (
-        <div className={className}>
-            This is the section of name {name}
+        <div className="Sponsors">
+            This is the section of name Sponsors
         </div>
     );
 }

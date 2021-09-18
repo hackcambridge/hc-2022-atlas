@@ -1,18 +1,15 @@
 import React from 'react';
 import './PastPhotos.css';
 
-export type PastPhotosProps = {
-    name: string;
-    className: string
-};
+export type PastPhotosProps = {};
 
 /**
  * Example Section
  */
-export default function PastPhotos({name, className}: PastPhotosProps) {
+export default function PastPhotos({}: PastPhotosProps) {
     return (
-        <div className={className}>
-            This is the section of name {name}
+        <div className={"PastPhotos"}>
+            This is the section of name PastPhotos
         </div>
     );
 }

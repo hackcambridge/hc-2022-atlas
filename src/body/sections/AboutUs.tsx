@@ -1,15 +1,12 @@
 import React from 'react';
 import './AboutUs.css';
 
-export type AboutUsProps = {
-    name: string;
-    className: string
-};
+export type AboutUsProps = {};
 
-export default function AboutUs({name, className}: AboutUsProps) {
+export default function AboutUs({}: AboutUsProps) {
     return (
-        <div className={className}>
-            This is the section of name {name}
+        <div className={"AboutUs"}>
+            This is the section of name AboutUs
         </div>
     );
 }

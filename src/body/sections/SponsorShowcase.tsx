@@ -1,15 +1,12 @@
 import React from 'react';
 import './SponsorShowcase.css';
 
-export type SponsorShowcaseProps = {
-    name: string;
-    className: string
-};
+export type SponsorShowcaseProps = {};
 
-export default function SponsorShowcase({name, className}: SponsorShowcaseProps) {
+export default function SponsorShowcase({}: SponsorShowcaseProps) {
     return (
-        <div className={className}>
-            This is the section of name {name}
+        <div className="SponsorShowcase">
+            This is the section of name SponsorShowcase
         </div>
     );
 }

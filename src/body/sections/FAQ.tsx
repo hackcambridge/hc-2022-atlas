@@ -1,15 +1,12 @@
 import React from 'react';
 import './FAQ.css';
 
-export type FAQProps = {
-    name: string;
-    className: string
-};
+export type FAQProps = {};
 
-export default function FAQ({name, className}: FAQProps) {
+export default function FAQ({}: FAQProps) {
     return (
-        <div className={className}>
-            This is the section of name {name}
+        <div className="FAQ">
+            This is the section of name FAQ
         </div>
     );
 }
