@@ -15,7 +15,7 @@ export type BodyProp = {
 
 export default function Body({}: BodyProp) {
     return (
-        <div className="test">
+        <div className="Body">
             <Landing />
             <AboutUs />
             <PastPhotos />
