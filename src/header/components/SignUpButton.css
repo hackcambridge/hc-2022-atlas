@@ -1,6 +1,6 @@
 .SignUp {
     color: white;
-    background-color: blue;
+    background-color: dodgerblue;
     text-decoration: none;
     border-radius: 5%;
     min-height: 40px;
@@ -11,7 +11,7 @@
 }
 
 .SignUp:hover {
-    color: blue;
+    color: dodgerblue;
     background-color: white;
     border-radius: 10%;
 }

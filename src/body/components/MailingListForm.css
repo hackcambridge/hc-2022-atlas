@@ -1,0 +1,31 @@
+.MailingListForm {
+    min-height: 40px;
+}
+
+#mailing-list-email {
+    background-color: gray;
+    margin-right: 10px;
+    height: 100%;
+    border-style: none;
+    border-radius: 4%;
+}
+
+#mailing-list-submit {
+    height: 100%;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 4%;
+    border-style: none;
+}
+
+#mailing-list-submit:hover {
+    background-color: white;
+    color: dodgerblue;
+    box-shadow: 2px inset;
+}
+
+.MailingListForm > * {
+    font-family: industry, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

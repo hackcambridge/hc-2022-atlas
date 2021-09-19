@@ -8,7 +8,7 @@ export type HomeProps = {
 } & RouteComponentProps;
 
 export default function Home({background}:HomeProps) {
-    return (<div id="content">
+    return (<div id="content" style={{backgroundColor: 'black'}}>
         <MovingBackground background={background}>
           {/* TEST BACKGROUND */}
           <Body />

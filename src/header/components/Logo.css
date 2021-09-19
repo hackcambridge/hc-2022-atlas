@@ -8,7 +8,7 @@
     height: max(2vw, 50px);
 }
 
-h1 {
+.Logo h1 {
     white-space: nowrap;
     font-family: industry, sans-serif;
     font-weight: 700;

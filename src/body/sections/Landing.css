@@ -1,4 +1,64 @@
 .Landing {
     display: flex;
     justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.landing-col1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-col1 h1 {
+    font-family: industry, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    white-space: nowrap;
+}
+
+.landing-col1 .landing-hc-title {
+    color: white;
+    font-size: xxx-large;
+}
+
+.landing-col1 h2 {
+    color: dodgerblue;
+    font-family: industry, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: normal;
+}
+
+.landing-col1 h3 {
+    font-family: industry, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: normal;
+    color: turquoise
+}
+
+.landing-col1 > * {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.landing-col1 > .SponsorButton {
+    margin-top: 40px;
+}
+
+.landing-col2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .landing-col2 {
+        display: none;
+    }
 }

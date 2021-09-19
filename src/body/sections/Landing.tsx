@@ -1,6 +1,12 @@
 import React from 'react';
 import './Landing.css';
-import worldMap from '../../img/worldmap_black.svg';
+import Timer from '../components/Timer';
+import MailingListForm from '../components/MailingListForm';
+import SponsorButton from '../components/SponsorButton';
+import LightBulb from '../components/LightBulb';
+
+// Format is MM/DD/YYYY
+export const targetDate = new Date('01/16/2022');
 
 export type LandingProps = {
     name?: string;
@@ -11,17 +17,20 @@ export type LandingProps = {
  * Landing Section
  */
 export default function Landing({name, className}: LandingProps) {
+    // TODO: Need to make the moving earth thing
+    // TODO: Move state up to Landing and define all the constants here
     return (
         <div className={className || "Landing"}>
             <div className="landing-col1">
-                <h1>Hack Cambridge Atlas</h1>
-                <p>16-17 Jan 2022</p>
-                <div>THIS IS A TIMER</div>
-                <div>THIS IS A MAILING LIST BUTTON</div>
-                <div>THIS IS A SPONSOR BUTTON</div>
+                <h1 className="landing-hc-title">Hack Cambridge Atlas</h1>
+                <h2>16-17 Jan 2022</h2>
+                <Timer targetDate={targetDate}/>
+                <h3>Until soft launch</h3>
+                <MailingListForm />
+                <SponsorButton />
             </div>
             <div className="landing-col2">
-                <div>THIS IS A BIG IMAGE</div>
+                <LightBulb />
             </div>
         </div>
     );

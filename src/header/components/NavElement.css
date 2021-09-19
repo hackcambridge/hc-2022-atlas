@@ -5,12 +5,12 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: blue;
+    color: black;
     font-weight: bolder;
 }
 
 .NavElement:hover {
-    background-color: blue;
+    background-color: dodgerblue;
     color: white;
 }
 
