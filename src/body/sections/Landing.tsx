@@ -6,7 +6,7 @@ import SponsorButton from '../components/SponsorButton';
 import LightBulb from '../components/LightBulb';
 
 // Format is MM/DD/YYYY
-export const targetDate = new Date('01/16/2022');
+export const targetDate = new Date('10/22/2021');
 
 export type LandingProps = {
     name?: string;
