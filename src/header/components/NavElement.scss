@@ -1,3 +1,5 @@
+@import '../../shared/style/colour-theme.scss';
+
 .NavElement {
     display: block;
     width: fit-content;
@@ -5,13 +7,11 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
     font-weight: bolder;
 }
 
 .NavElement:hover {
-    background-color: dodgerblue;
-    color: white;
+    text-decoration: underline;    
 }
 
 @media only screen and (max-width: 960px) {

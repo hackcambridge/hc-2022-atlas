@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from '@reach/router';
-import './NavElement.css';
+import './NavElement.scss';
 
 export type NavElementProps = {name: string; href: string};
 

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './Timer.css';
+import './Timer.scss';
 
 export type TimerProps = {
-    targetDate: Date
+    targetDate: Date;
+    until: string;
 };
 
 type TimeFormat = {
@@ -32,7 +33,7 @@ const calculateTimeLeft = (targetDate: Date): TimeFormat => {
     return timeLeft;
 };
 
-export default function Timer({targetDate}: TimerProps) {
+export default function Timer({targetDate, until}: TimerProps) {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
     useEffect(() => {
         const timeOut = setTimeout(() => {
@@ -43,5 +44,10 @@ export default function Timer({targetDate}: TimerProps) {
         };
     }, [targetDate, timeLeft]);
     
-    return <h1 className="Timer">{`${timeLeft.days}:${timeLeft.hours}:${timeLeft.minutes}:${timeLeft.seconds}`}</h1>
+    return (
+        <div className="Timer">
+        <h1>{`${timeLeft.days}:${timeLeft.hours}:${timeLeft.minutes}:${timeLeft.seconds}`}</h1>
+        <h3>Until {until}</h3>
+        </div>
+    );
 }

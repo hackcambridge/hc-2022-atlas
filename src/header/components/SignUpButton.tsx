@@ -1,5 +1,5 @@
 import React from "react";
-import './SignUpButton.css';
+import './SignUpButton.scss';
 
 export type SignUpButtonProps = {
     href: string

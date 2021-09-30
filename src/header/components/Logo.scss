@@ -1,3 +1,5 @@
+@import "../../shared/style/font.scss";
+
 .Logo {
     display: flex;
     flex-direction: row;
@@ -5,14 +7,13 @@
 }
 
 .HC-logo {
-    height: max(2vw, 50px);
+    height: calc(max(2vw, 50px));
+    margin-right: 10px;
 }
 
 .Logo h1 {
     white-space: nowrap;
-    font-family: industry, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    @include industry-bold();
 }
 
 @media screen and (max-width:480px) {

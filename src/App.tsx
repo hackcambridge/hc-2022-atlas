@@ -1,10 +1,11 @@
-import React from 'react';
-import logo from './img/logo.svg';
-import background from './img/worldmap_white.svg';
-import './App.css';
+import React, { useLayoutEffect } from 'react';
+import logo from "./shared/img/hcf-logo-white.png";
+import background from './shared/img/worldmap_white.svg';
+import './App.scss';
 import Header from './header/containers/Header';
 import {Router} from '@reach/router';
 import Home from './shared/containers/Home';
+import { useController } from 'react-scroll-parallax';
 
 function App() {
   const navElements = [

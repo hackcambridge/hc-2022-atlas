@@ -1,0 +1,100 @@
+@import "../../shared/style/colour-theme.scss";
+@import "../../shared/style/font.scss";
+
+.Landing {
+    position: relative;
+}
+.landing-main {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.landing-bg-parallax {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.landing-bg {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    min-width: 100%;
+    min-height:120vh;
+    background-image: url("../../shared/img/world_map_coloured.png");
+    z-index: 0;
+    overflow: visible;
+}
+
+.landing-col1 {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-col1 > * {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.landing-col1 > .SponsorButton {
+    margin-top: 40px;
+}
+
+.landing-col1 .landing-hc-title {
+    @include industry-bold();
+    white-space: nowrap;
+    color: $green;
+}
+
+.landing-col1 .landing-hc-title-small {
+    font-size: xxx-large;
+    margin-bottom: -2%;
+}
+
+.landing-col1 .landing-hc-title-big {
+    font-size: calc(min(1.5in, 15vh));
+    margin: 0%;
+}
+
+.landing-col1 h2 {
+    color: dodgerblue;
+    @include industry-bold();
+    font-size: normal;
+}
+
+.landing-date {
+    @include industry-bold();
+    font-size: xxx-large;
+    color: $white;
+    margin-bottom: 10px;
+    margin-top: 0%;
+}
+
+.landing-col1 > p {
+    margin-top: 10px;
+    @include industry-simple();
+    color: $white;
+    max-width: 350px;
+}
+
+.landing-col2 {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .landing-col2 {
+        display: none;
+    }
+}

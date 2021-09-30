@@ -1,6 +1,6 @@
 import React from "react";
 import './LightBulb.css';
-import background from '../../img/worldmap_white.svg';
+import background from '../../shared/img/worldmap_white.svg';
 
 export default function LightBulb() {
     return (
