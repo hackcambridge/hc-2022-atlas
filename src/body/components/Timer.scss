@@ -1,16 +1,14 @@
 @import "../../shared/style/colour-theme.scss";
 @import "../../shared/style/font.scss";
+@import "../../shared/style/util.scss";
 
 .Timer {
     display: flex;
     flex-direction: column;
     margin: 0%;
     padding: 10px;
-    backdrop-filter: blur(4px) saturate(180%);
-    -webkit-backdrop-filter: blur(4px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.4);
+    @include glassmorphism();
     border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .Timer > * {

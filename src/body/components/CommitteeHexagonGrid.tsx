@@ -62,7 +62,7 @@ export default function CommitteeHexagonGrid({committeeMembers}: CommitteeHexago
                 </div>
             </li> */}
             {committeeMembers.map((member, n) => (
-                <li className="hex-grid__item">
+                <li key={member.caption} className="hex-grid__item">
                     <div className="hex-grid__content">
                         {n}
                     </div>

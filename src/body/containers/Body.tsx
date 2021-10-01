@@ -13,13 +13,31 @@ export type BodyProp = {
 
 };
 
+const faqQuestions = [
+    {
+        question: "q1 something something?",
+        answer: "answer answer answer",
+        folded: false
+    },
+    {
+        question: "q2 something something?",
+        answer: "answer answer answer",
+        folded: true
+    },
+    {
+        question: "q3 something something?",
+        answer: "answer answer answer",
+        folded: true
+    }
+];
+
 export default function Body({}: BodyProp) {
     return (
         <div className="Body">
             <Landing />
             <AboutUs />
             <PastPhotos />
-            <FAQ />
+            <FAQ qs={faqQuestions} />
             <SponsorShowcase />
             <Sponsors />
             <PastHackathons />

@@ -1,0 +1,21 @@
+@import '../../shared/style/colour-theme.scss';
+@import '../../shared/style/font.scss';
+@import '../../shared/style/util.scss';
+
+.FAQ {
+    display: flex;
+    flex-direction: row;
+    padding: 5%
+}
+
+.faq-col {
+    
+}
+
+.faq-col-1 {
+    flex: 2;
+}
+
+.faq-col-2 {
+    flex: 3;
+}

@@ -6,43 +6,43 @@ import './Committee.css';
 const committeInfo = [
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name1"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name2"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name3"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name4"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name5"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name6"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name7"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name8"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name9"
     },
     {
         image: "sth.jpg",
-        caption: "Name"
+        caption: "Name10"
     }
 ];
 
