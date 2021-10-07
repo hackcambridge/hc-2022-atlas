@@ -5,9 +5,7 @@ import MovingBackground from "./MovingBackground";
 import {ParallaxProvider, useController} from 'react-scroll-parallax';
 import './Home.scss';
 
-export type HomeProps = {
-    background:string,
-} & RouteComponentProps;
+export type HomeProps = {} & RouteComponentProps;
 
 const ParallaxCache = () => {
     const { parallaxController } = useController();
@@ -21,7 +19,7 @@ const ParallaxCache = () => {
     return null;
   }
   
-export default function Home({background}:HomeProps) {
+export default function Home(props:HomeProps) {
     return (<div className="Home">
         <ParallaxProvider>
             <ParallaxCache />

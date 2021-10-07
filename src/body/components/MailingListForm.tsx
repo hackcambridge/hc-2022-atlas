@@ -3,6 +3,9 @@ import './MailingListForm.css';
 
 export type MailingListFormProps = {};
 
+/**
+ * @deprecated
+ */
 export default function MailingListForm({}: MailingListFormProps) {
     const inputRef = useRef<HTMLInputElement>(null);
 

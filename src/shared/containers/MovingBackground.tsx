@@ -31,6 +31,9 @@ export type MovingBackgroundProps = {
     background: string
 };
 
+/**
+ * @deprecated
+ */
 export default function MovingBackground({children, background}: MovingBackgroundProps) {
     const [backgroundPos, setBackgroundPos] = useState([50, 50]);
     const ref = useRef<HTMLDivElement>(null);

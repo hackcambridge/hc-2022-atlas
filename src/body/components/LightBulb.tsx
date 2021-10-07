@@ -2,6 +2,9 @@ import React from "react";
 import './LightBulb.css';
 import background from '../../shared/img/worldmap_white.svg';
 
+/**
+ * @deprecated
+ */
 export default function LightBulb() {
     return (
         <div className="LightBulb">

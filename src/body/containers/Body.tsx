@@ -13,6 +13,8 @@ export type BodyProp = {
 
 };
 
+// This is temporary.
+// TODO: need to put this in some config file and then we can import this afterwards
 const faqQuestions = [
     {
         question: "q1 something something?",
