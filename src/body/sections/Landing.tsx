@@ -1,9 +1,7 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import './Landing.scss';
 import Timer from '../components/Timer';
-import MailingListForm from '../components/MailingListForm';
-import SponsorButton from '../components/SponsorButton';
-import LightBulb from '../components/LightBulb';
+import background from '../../shared/img/world_map_coloured.svg';
 import { Parallax, useController } from 'react-scroll-parallax';
 
 // Format is MM/DD/YYYY
@@ -21,8 +19,8 @@ export default function Landing({name}: LandingProps) {
     // TODO: Move state up to Landing and define all the constants here
     return (
         <div className="Landing">
-            <Parallax className="landing-bg-parallax" x={[70, -20]} y={[0, 0]}>
-                <div className="landing-bg"></div>
+            <Parallax className="landing-bg-parallax" x={[50, -30]} y={[0, 0]}>
+                <div className="landing-bg" style={{backgroundImage: `url(${background})`}}></div>
             </Parallax>
             <div className={"landing-main"}>
                 <div className="landing-col1">
