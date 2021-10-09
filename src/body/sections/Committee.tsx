@@ -1,7 +1,7 @@
 import React from 'react';
 import CommitteeHexagonGrid from '../components/CommitteeHexagonGrid';
 
-import './Committee.css';
+import './Committee.scss';
 
 const committeInfo = [
     {

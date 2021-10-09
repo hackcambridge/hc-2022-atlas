@@ -17,22 +17,54 @@
 .about-us-col-1 {
     margin-right: 10px;
     flex: 3;
+    h1 {
+        @include industry-bold();
+        color: $green;
+    }
+    .about-us-with-dec {
+        display: flex;
+        p {
+            @include industry-simple();
+            @include glassmorphism();
+            border-radius: 12px;
+            padding: 10px;
+            color: $white;
+        }
+        .about-us-dec {
+            max-width: 7vw;
+        }
+        #about-us-cone {
+            transform: rotate(-15deg);
+            max-width: 5vw;
+            margin-top: -5%;
+        }
+        #about-us-donut {
+            transform: rotate(30deg);
+            margin-left: -30%;
+        }
+
+        #about-us-sphere {
+            max-width: 4vw;
+        }
+    }
 }
 
 .about-us-col-2 {
+    margin-top: -10%;
     margin-left: 10px;
     flex: 2;
-}
-
-.about-us-col-1 h1 {
-    @include industry-bold();
-    color: $green;
-}
-
-.about-us-col-1 p {
-    @include industry-simple();
-    @include glassmorphism();
-    border-radius: 12px;
-    padding: 10px;
-    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding: 3%;
+        max-height: 40vh;
+    }
+    img:nth-child(2) {
+        max-width: 20vw;
+    }
+    @media screen and (max-width: 960px) {
+        display: none;
+    }
 }
