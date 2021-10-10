@@ -19,7 +19,7 @@ export default function Landing({name}: LandingProps) {
     // TODO: Move state up to Landing and define all the constants here
     return (
         <div className="Landing">
-            <Parallax className="landing-bg-parallax" x={[50, -30]} y={[0, 0]}>
+            <Parallax className="landing-bg-parallax" x={[60, -30]} y={[0, 0]}>
                 <div className="landing-bg" style={{backgroundImage: `url(${background})`}}></div>
             </Parallax>
             <div className={"landing-main"}>

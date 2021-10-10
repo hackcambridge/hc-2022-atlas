@@ -9,6 +9,12 @@ import Sponsors from "../sections/Sponsors";
 import SponsorShowcase from "../sections/SponsorShowcase";
 import './Body.css';
 
+import photo1 from "../../shared/img/past-photos/1.jpg";
+import photo2 from "../../shared/img/past-photos/2.jpg";
+import photo3 from "../../shared/img/past-photos/3.jpg";
+import photo4 from "../../shared/img/past-photos/4.jpg";
+
+
 export type BodyProp = {
 
 };
@@ -33,12 +39,31 @@ const faqQuestions = [
     }
 ];
 
+const pastPhotos = [
+    {
+        photo: photo1,
+        caption: "This is a caption"
+    },
+    {
+        photo: photo2,
+        caption: "This is a caption"
+    },
+    {
+        photo: photo3,
+        caption: "This is a caption"
+    },
+    {
+        photo: photo4,
+        caption: "This is a caption"
+    }
+];
+
 export default function Body({}: BodyProp) {
     return (
         <div className="Body">
             <Landing />
             <AboutUs />
-            <PastPhotos />
+            <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />
             <SponsorShowcase />
             <Sponsors />
