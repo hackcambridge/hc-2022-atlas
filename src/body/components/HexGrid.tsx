@@ -2,10 +2,12 @@ import React, { CSSProperties } from 'react';
 import './HexGrid.scss';
 
 export type HexGridProps = {
+    className?: string,
     info: {
         image: string,
         title: string,
         caption: string,
+        visible: boolean,
     }[],
     layoutInfo: {
         nHexaBig: number,
@@ -13,11 +15,11 @@ export type HexGridProps = {
     }
 };
 
-type HexProps = {
+export type HexProps = {
     title: string, 
     caption: string, 
     image: string,
-    visible: boolean
+    visible: boolean,
 }
 
 const Hex = ({title, caption, image, visible}: HexProps) => {
@@ -37,7 +39,7 @@ export interface CustomCSSForHexGrid extends CSSProperties {
     '--Nhexa-med': number
 };
 
-export default function HexGrid({info, layoutInfo} : HexGridProps) {
+export default function HexGrid({className, info, layoutInfo} : HexGridProps) {
     const getStyle = (nHexaBig: number, nHexaMed: number) => {
         return {
             '--Nhexa-big': nHexaBig,
@@ -46,9 +48,9 @@ export default function HexGrid({info, layoutInfo} : HexGridProps) {
     }
     
     return (
-    <div className="HexGrid" style={getStyle(layoutInfo.nHexaBig, layoutInfo.nHexaMed)}>
+    <div className={className? className + " HexGrid": "HexGrid"} style={getStyle(layoutInfo.nHexaBig, layoutInfo.nHexaMed)}>
         <section>
-        {info.map((comInfo) => <Hex key={comInfo.caption} {...comInfo} visible/>)}
+        {info.map((comInfo) => <Hex key={comInfo.caption} {...comInfo}/>)}
         </section>
     </div>
     )

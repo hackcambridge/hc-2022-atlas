@@ -11,53 +11,63 @@ import khalid from '../../shared/img/committee/Khalid.jpg';
 const committeInfo = [
     {
         image: zoey,
-        caption: "Zoey",
-        title: "Zoey"
+        caption: "The Boss",
+        title: "Zoey",
+        visible: true
     },
     {
         image: khalid,
-        caption: "Khalid",
+        caption: "Finance",
         title: "Khalid",
+        visible: true
     },
     {
         image: theo,
-        caption: "Theo",
-        title: "Theo"
+        caption: "Development",
+        title: "Theo",
+        visible: true
     },
     {
         image: "sth.jpg",
-        caption: "Name4",
-        title: "Name"
+        caption: "Sponsorship",
+        title: "Name",
+        visible: true
     },
     {
         image: "sth.jpg",
-        caption: "Name5",
-        title: "Name"
+        caption: "Design",
+        title: "Name",
+        visible: true
     },
     {
         image: "sth.jpg",
-        caption: "Name6",
-        title: "Name"
+        caption: "Internal External Coordination",
+        title: "Name",
+        visible: true
     },
     {
         image: "sth.jpg",
-        caption: "Name7",
-        title: "Name"
+        caption: "Publicity",
+        title: "Name",
+        visible: true
     },
     {
         image: "sth.jpg",
         caption: "Name8", 
-        title: "Name"
+        title: "Name",
+        visible: true
     },
     {
         image: "sth.jpg",
         caption: "Name9",
-        title: "Name"
+        title: "Name",
+        visible: true
     },
     {
         image: "sth.jpg",
         caption: "Name10",
-        title: "Name"
+        title: "Name",
+        visible: true
     }
 ];
 
