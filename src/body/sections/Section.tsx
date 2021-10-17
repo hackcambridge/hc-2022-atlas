@@ -7,6 +7,7 @@ export type SectionProps = {
 
 /**
  * Example Section
+ * Used for copy-pasting
  */
 export default function Section({name, className}: SectionProps) {
     return (

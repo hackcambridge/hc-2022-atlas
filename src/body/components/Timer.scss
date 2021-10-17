@@ -10,11 +10,12 @@
     padding: 10px;
     @include glassmorphism();
     border-radius: 12px;
+    min-width: calc(min(1.5in, 15vh)*6);
 }
 
 .Timer > * {
     @include industry-bold();
-    opacity: 70%;
+    opacity: 70%;    
 }
 
 .Timer h1 {

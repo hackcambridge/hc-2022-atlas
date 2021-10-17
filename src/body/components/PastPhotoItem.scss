@@ -8,6 +8,7 @@
     background-size: cover;
     background-image: url("../../shared//img/001-idea.png");
     border-radius: 5%;
+    border-style: none;
     @include glassmorphism();
     margin: 20px;
     .past-photo-item__hover {
