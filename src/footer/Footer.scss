@@ -1,9 +1,22 @@
+@import '../shared/style/util.scss';
+@import '../shared/style/font.scss';
+@import '../shared/style/colour-theme.scss';
+
 .Footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     .JoinUs {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            @include industry-bold();
+            color: $blue;
+        }
+        .MailingListForm {
+            height: 5vh;
+        }
     }
     .SocialMedia {
         display: flex;

@@ -7,7 +7,7 @@ import PastHackathons from "../sections/PastHackathons";
 import PastPhotos from "../sections/PastPhotos";
 import Sponsors, { Sponsor } from "../sections/Sponsors";
 import SponsorShowcase from "../sections/SponsorShowcase";
-import './Body.css';
+import './Body.scss';
 
 import photo1 from "../../shared/img/past-photos/1.jpg";
 import photo2 from "../../shared/img/past-photos/2.jpg";
@@ -17,8 +17,14 @@ import photo4 from "../../shared/img/past-photos/4.jpg";
 import zoey from '../../shared/img/committee/Zoey.jpg';
 import theo from '../../shared/img/committee/Theo.jpg';
 import khalid from '../../shared/img/committee/Khalid.jpg';
+import marcus from '../../shared/img/committee/Marcus.jpg';
+import jonathan from '../../shared/img/committee/Jonathan.jpg';
 
 import placeHolderLogo from '../../shared/img/White Logo.png';
+import mw from '../../shared/img/sponsors/marshall_wace_transparent.png';
+import reply from '../../shared/img/sponsors/reply_logo.svg';
+import huawei from '../../shared/img/sponsors/huawei.png';
+import citadel from '../../shared/img/sponsors/citadel.png';
 
 export type BodyProp = {
 
@@ -31,8 +37,8 @@ const cohost : Sponsor =
     {
         name: "Marshall Wace",
         tier: 'Cohost',
-        href: '',
-        image: placeHolderLogo,
+        href: 'https://www.mwam.com/',
+        image: mw,
         isPlaceHolder: false
     };
 
@@ -40,19 +46,19 @@ const tera : Sponsor[] = [
     {
         name: "Reply",
         tier: 'Tera',
-        href: '',
-        image: placeHolderLogo,
+        href: 'https://www.reply.com',
+        image: reply,
         isPlaceHolder: false
     },
     {
-        name: "Something else",
+        name: "Huawei",
         tier: 'Tera',
-        href: '',
-        image: placeHolderLogo,
+        href: 'https://www.huawei.com/',
+        image: huawei,
         isPlaceHolder: false
     },
     {
-        name: "Something something else",
+        name: "Something",
         tier: 'Tera',
         href: '',
         image: placeHolderLogo,
@@ -60,11 +66,91 @@ const tera : Sponsor[] = [
     }
 ];
 
-const giga: Sponsor[] = [];
+const giga: Sponsor[] = [
+    {
+        name: "Something2",
+        tier: 'Giga',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something3",
+        tier: 'Giga',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something4",
+        tier: 'Tera',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    }
+];
 
-const mega: Sponsor[] = [];
+const mega: Sponsor[] = [
+    {
+        name: "Something5",
+        tier: 'Mega',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something6",
+        tier: 'Mega',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something7",
+        tier: 'Mega',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    }
+];
 
-const kilo: Sponsor[] = [];
+const kilo: Sponsor[] = [
+    {
+        name: "Something8",
+        tier: 'Kilo',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something9",
+        tier: 'Kilo',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something10",
+        tier: 'Kilo',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something11",
+        tier: 'Kilo',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something12",
+        tier: 'Kilo',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: false
+    }
+];
 
 const faqQuestions = [
     {
@@ -123,33 +209,33 @@ const committeInfo = [
         visible: true
     },
     {
-        image: "sth.jpg",
+        image: marcus,
         caption: "Sponsorship",
-        title: "Name",
+        title: "Marcus",
         visible: true
     },
     {
         image: "sth.jpg",
         caption: "Design",
-        title: "Name",
+        title: "Holly",
         visible: true
     },
     {
         image: "sth.jpg",
         caption: "Internal External Coordination",
-        title: "Name",
+        title: "Ayush",
         visible: true
     },
     {
         image: "sth.jpg",
         caption: "Publicity",
-        title: "Name",
+        title: "Rishita",
         visible: true
     },
     {
-        image: "sth.jpg",
-        caption: "Name8", 
-        title: "Logistics",
+        image: jonathan,
+        caption: "Logistics", 
+        title: "Jonathan",
         visible: true
     },
     {
@@ -168,16 +254,16 @@ const committeInfo = [
 
 const linkToJoin = '';
 
-export default function Body({}: BodyProp) {
+export default function Body(props: BodyProp) {
     return (
         <div className="Body">
             <Landing />
             <AboutUs />
             <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />
-            <SponsorShowcase />
+            {/* <SponsorShowcase /> */}
             <Sponsors cohost={cohost} tera={tera} giga={giga} mega={mega} kilo={kilo}/>
-            <PastHackathons />
+            {/* <PastHackathons /> */}
             <Committee committeeInfo={committeInfo} linkToJoin={linkToJoin}/>
         </div>
     );

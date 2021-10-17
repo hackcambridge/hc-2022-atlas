@@ -3,7 +3,6 @@ import './App.scss';
 import Header from './header/containers/Header';
 import {Router} from '@reach/router';
 import Home from './shared/containers/Home';
-import Footer from "./footer/Footer";
 
 function App() {
   const navElements = [

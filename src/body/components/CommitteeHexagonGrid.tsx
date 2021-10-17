@@ -4,6 +4,7 @@ import './CommitteeHexagonGrid.scss';
 export type CommitteeHexagonGridProps = {committeeMembers: {image: string, caption: string}[]};
 
 /**
+ * @deprecated
  * Committee hexagon grid
  * TODO: Refactor because this class defo is NOT good react practice. Rather, it's just code copy pasted from internet
  * @param committeeMembers - {image: string, caption: string}[]

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Landing.scss';
 import Timer from '../components/Timer';
+// import background from '../../shared/img/world_map_coloured.svg';
 import background from '../../shared/img/world_map_coloured.svg';
 import { Parallax, useController } from 'react-scroll-parallax';
 

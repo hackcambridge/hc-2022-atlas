@@ -15,7 +15,6 @@
     border: 0 none;
     position: relative;
   }
-
   --Nhexa: var(--Nhexa-med);
   --gap: 2vw;
   --size: calc(calc(var(--base-size) / var(--Nhexa)) - var(--gap));
@@ -42,7 +41,11 @@
     grid-gap: var(--gap);
     margin-bottom: 10%;
   }
-  article {
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  a {
     @include glassmorphism();
     width: var(--size);
     height: calc(var(--size) / 1.1111111);
@@ -79,8 +82,12 @@
       align-items: center;
       padding-left: 10%;
       padding-right: 10%;
+      opacity: 0;
     }
-    figure > p {
+    h2 {
+      text-align: center;
+    }
+    p {
       text-align: center;
     }
     &:hover {
@@ -88,18 +95,22 @@
         opacity: 0;
         transition: 0.5s ease-in-out;
       }
+      figure {
+        opacity: 100;
+      }
     }
   }
-
-  @media screen and (max-width: 600px) {
-    margin-right: inherit;
-    section {
-      display: flex;
-      flex-direction: column;
-      margin-top: 0;
-    }
-    article {
+  @if var(--Nhexa-big)!=1 {
+    @media screen and (max-width: 600px) {
       margin-right: inherit;
+      section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+      }
+      a {
+        margin-right: inherit;
+      }
     }
   }
 }
