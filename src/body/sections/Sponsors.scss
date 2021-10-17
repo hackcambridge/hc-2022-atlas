@@ -12,4 +12,18 @@
     h2 {
         @include industry-simple();
     }
+
+    .hex-cohost {
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        section {
+            width: 100%;
+            margin: 0%;
+            article {
+                margin: 0%;
+            }
+        }
+    }
 }

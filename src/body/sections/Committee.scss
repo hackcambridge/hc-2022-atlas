@@ -10,4 +10,30 @@
         @include industry_bold();
         color: $blue;
     }
+    .hex-committee section {
+        margin-bottom: 5%;
+    }
+    .join-us {
+        width: 100%;
+        display: flex;
+        justify-content:flex-end;
+        margin-bottom: 5%;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 7vw;
+            height: 5vh;   
+            margin-right: 5%;
+            background-color: $blue;
+            color: $white;
+            text-decoration: none;
+            border-radius: 5%;
+            &:hover {
+                color: $blue;
+                background-color: transparent;
+                box-shadow: 5px inset;
+            }
+        }
+    }
 }

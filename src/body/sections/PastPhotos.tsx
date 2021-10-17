@@ -16,6 +16,7 @@ const responsive = {
 export default function PastPhotos({items}: PastPhotosProps) {
     return (
         <div className="PastPhotos">
+            <h1>How far we've come</h1>
             <AliceCarousel mouseTracking items={items.map((item, i) => <PastPhotoItem key={i} {...item}/>)} responsive={responsive} controlsStrategy="alternate" />
         </div>
     );

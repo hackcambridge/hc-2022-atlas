@@ -18,7 +18,7 @@
 
   --Nhexa: var(--Nhexa-med);
   --gap: 2vw;
-  --size: calc(calc(100vw / var(--Nhexa)) - var(--gap));
+  --size: calc(calc(var(--base-size) / var(--Nhexa)) - var(--gap));
 
   @media only screen and (min-width: 1100px) {
     --Nhexa: var(--Nhexa-big);
@@ -29,16 +29,18 @@
   @include industry-simple();
   font-size: 1rem;
 
-  margin-right: calc(var(--size) * 0.5);
-  overflow-x: visible;
+  margin-right: calc(var(--size) * 0.7);
+  // overflow-x: visible;
+  width: fit-content;
   hyphens: auto;
 
   section {
-    margin: calc(var(--size) * 0.5) auto 0;
+    margin: calc(var(--size) * 0.5) 0;
     width: calc(var(--size) * calc(var(--Nhexa) - 1));
     display: grid;
     grid-template-columns: repeat(var(--Nhexa), 1fr);
     grid-gap: var(--gap);
+    margin-bottom: 10%;
   }
   article {
     @include glassmorphism();

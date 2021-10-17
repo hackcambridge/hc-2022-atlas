@@ -4,6 +4,7 @@ import Body from "../../body/containers/Body";
 import MovingBackground from "./MovingBackground";
 import {ParallaxProvider, useController} from 'react-scroll-parallax';
 import './Home.scss';
+import Footer from "../../footer/Footer";
 
 export type HomeProps = {} & RouteComponentProps;
 
@@ -24,6 +25,7 @@ export default function Home(props:HomeProps) {
         <ParallaxProvider>
             <ParallaxCache />
             <Body />
+            <Footer />
         </ParallaxProvider>
       </div>);
 }
