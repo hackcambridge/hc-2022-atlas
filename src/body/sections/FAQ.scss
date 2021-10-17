@@ -8,14 +8,48 @@
     padding: 5%
 }
 
+.title{
+    margin-left: -30%;
+}
+
 .faq-col {
-    
 }
 
 .faq-col-1 {
-    flex: 2;
+    flex: 1;
+    max-width: 60%;
 }
 
 .faq-col-2 {
+    flex: 1;
+    max-width: 60%;
+}
+
+.faq-col-3 {
     flex: 3;
+    max-width: 80%;
+    margin-left: -20%;
+    .faq-col-3-1{
+        padding-left: 10%;
+    }
+    
+    .faq-col-3-2{
+        max-width: 80%;
+    }
+}
+
+
+
+
+#FAQ-hexagon{
+    max-width: 180%;
+    margin-left: -100%;
+    z-index: 0;
+}
+
+#FAQ-donut{
+    max-width: 80%;
+    margin-top: 80%;
+    margin-left: -100%;
+    z-index: 1;
 }
