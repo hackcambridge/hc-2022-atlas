@@ -19,6 +19,8 @@ import theo from '../../shared/img/committee/Theo.jpg';
 import khalid from '../../shared/img/committee/Khalid.jpg';
 import marcus from '../../shared/img/committee/Marcus.jpg';
 import jonathan from '../../shared/img/committee/Jonathan.jpg';
+import ayush from '../../shared/img/committee/Ayush.jpg';
+import vincent from '../../shared/img/committee/Vincent.jpeg';
 
 import placeHolderLogo from '../../shared/img/White Logo.png';
 import mw from '../../shared/img/sponsors/marshall_wace_transparent.png';
@@ -198,50 +200,50 @@ const committeInfo = [
     },
     {
         image: khalid,
-        caption: "Finance",
+        caption: "Head of Finance",
         title: "Khalid",
         visible: true
     },
     {
         image: theo,
-        caption: "Development",
+        caption: "Head of Development",
         title: "Theo",
         visible: true
     },
     {
         image: marcus,
-        caption: "Sponsorship",
+        caption: "Head of Sponsorship",
         title: "Marcus",
         visible: true
     },
     {
         image: "sth.jpg",
-        caption: "Design",
+        caption: "Head of Design",
         title: "Holly",
         visible: true
     },
     {
-        image: "sth.jpg",
-        caption: "Internal External Coordination",
+        image: ayush,
+        caption: "Head of Internal External Coordination",
         title: "Ayush",
         visible: true
     },
     {
         image: "sth.jpg",
-        caption: "Publicity",
+        caption: "Head of Publicity",
         title: "Rishita",
         visible: true
     },
     {
         image: jonathan,
-        caption: "Logistics", 
+        caption: "Head of Logistics", 
         title: "Jonathan",
         visible: true
     },
     {
-        image: "sth.jpg",
-        caption: "Name9",
-        title: "Name",
+        image: vincent,
+        caption: "Sponsorship",
+        title: "Vincent",
         visible: true
     },
     {
