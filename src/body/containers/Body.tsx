@@ -156,18 +156,33 @@ const kilo: Sponsor[] = [
 
 const faqQuestions = [
     {
-        question: "q1 something something?",
-        answer: "answer answer answer",
+        question: "What is a hackathon?",
+        answer: "A hackathon is an invention marathon. Thoughts become things. Attendees work in teams of up to 5 people to hack together a prototype to solve a problem; this could be a web app, hardware-hack, or something completely different.",
         folded: false
     },
     {
-        question: "q2 something something?",
-        answer: "answer answer answer",
+        question: "How is the hackathon going to take place?",
+        answer: "This year Hack Cambridge Atlas is planned as a Hybrid Event with 300 participants offline at Cambridge and 200 participants online through Discord. The workshops and all engagement opportunities will happen offline while being live-streamed on Discord.",
         folded: true
     },
     {
-        question: "q3 something something?",
-        answer: "answer answer answer",
+        question: "Do I need a team to apply?",
+        answer: "Nope! You are of course welcome to apply in a pre-formed team but some of our hackers will meet their team at the start of the event.",
+        folded: true
+    },
+    {
+        question: "How large can the teams be?",
+        answer: "To achieve fairness in the event, no more than 4 people can be in a team.",
+        folded: true
+    },
+    {
+        question: "I am not from the University of Cambridge. Am I allowed to attend?",
+        answer: "Anyone who is currently a registered student or has graduated after 22nd January 2021 is eligible to attend. Sadly we can't accommodate anyone under the age of 18 this year.",
+        folded: true
+    },
+    {
+        question: "Is Hack Cambridge Atlas free to attend?",
+        answer: "Absolutely! Participation is free for all invited hackers. We provide interesting workshops, entertaining activties, and some swag during the event.",
         folded: true
     }
 ];
