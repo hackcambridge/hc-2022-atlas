@@ -8,9 +8,13 @@
   align-items: center;
   h1 {
     @include industry-bold();
+    font-size: calc(min(0.7in, 8vw));
+    color: $green;
+    margin-left: -60%;
   }
   h2 {
     @include industry-simple();
+    color: $blue;
   }
 
   .hex-cohost {

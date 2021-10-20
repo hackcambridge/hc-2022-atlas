@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
     h1 {
         @include industry_bold();
         color: $blue;
@@ -22,7 +23,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 7vw;
+            width: 15vw;
             height: 5vh;   
             margin-right: 5%;
             background-color: $blue;

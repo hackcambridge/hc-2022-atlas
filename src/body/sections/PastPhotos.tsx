@@ -2,6 +2,7 @@ import React from 'react';
 import './PastPhotos.scss';
 import AliceCarousel from 'react-alice-carousel';
 import PastPhotoItem, { PastPhotoItemProps } from '../components/PastPhotoItem';
+import Fade from 'react-reveal';
 
 export type PastPhotosProps = {
     items: PastPhotoItemProps[]
@@ -16,8 +17,13 @@ const responsive = {
 export default function PastPhotos({items}: PastPhotosProps) {
     return (
         <div className="PastPhotos">
-            <h1>How far we've come</h1>
-            <AliceCarousel mouseTracking items={items.map((item, i) => <PastPhotoItem key={i} {...item}/>)} responsive={responsive} controlsStrategy="alternate" />
+            <Fade left>
+                <h1>Looking back</h1>
+                <h2>on our past events</h2>
+            </Fade>
+            <Fade right>
+            <AliceCarousel mouseTracking touchTracking items={items.map((item, i) => <PastPhotoItem key={i} {...item}/>)} responsive={responsive} controlsStrategy="alternate" />
+            </Fade>
         </div>
     );
 }

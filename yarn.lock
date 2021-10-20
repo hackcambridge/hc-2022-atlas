@@ -1980,6 +1980,9 @@
   version "2.1.1"
   resolved "https://registry.npmmirror.com/@types/react-mailchimp-subscribe/download/@types/react-mailchimp-subscribe-2.1.1.tgz#e42b6d84aab84881d0b0868667a6b9ba38059425"
   integrity sha1-5CtthKq4SIHQsIaGZ6a5ujgFlCU=
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-transition-group@^4.4.1", "@types/react-transition-group@^4.4.3":
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.3.tgz#b0994da0a7023d67dbb4a8910a62112bc00d5688"
@@ -9881,6 +9884,11 @@ react-scroll-parallax@^2.4.0:
   integrity sha1-BkNiEH4YofYQulyOEcHBrqDaQSk=
   dependencies:
     prop-types "^15.5.10"
+
+react-scroll-rotate@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-scroll-rotate/-/react-scroll-rotate-0.0.7.tgz#54b8ab7b8d0ea8f8f4e64ed0c672170f11b05a36"
+  integrity sha512-Sfjlo5CnzRjQ/Dl5jticKqs/sNUjNsTwNQTmh8DFb6x+sh3xNT8cdIBzyT93hryJ08gpdaEqFsCyxD3Z+9E2VA==
 
 react-transition-group@^4.4.1:
   version "4.4.2"

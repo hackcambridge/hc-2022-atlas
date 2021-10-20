@@ -25,9 +25,9 @@
     }
     
     .faq-col-3 {
-        flex: 3;
+        flex: 5;
         max-width: 80%;
-        margin-left: -20%;
+        margin-left: -40%;
         .faq-col-3-1{
             padding-left: 10%;
         }
@@ -37,16 +37,24 @@
         }
     }
 
-    #FAQ-hexagon{
-        max-width: 180%;
-        margin-left: -100%;
-        z-index: 0;
+    #FAQ-cube{
+        margin-top: -40vh;
+        margin-left: calc(-10vw);
+        min-width: 80vw;
     }
     
-    #FAQ-donut{
-        max-width: 80%;
-        margin-top: 80%;
-        margin-left: -100%;
-        z-index: 1;
+    #FAQ-rocket{
+        max-width: calc(max(100px,80%));
+        margin-top: 70%;
+        margin-left: -130%;
+        z-index: 3;
+    }
+
+    h1 {
+        @include industry-bold();
+        font-size: calc(min(0.7in, 8vw));
+        color: $green;
+        margin-left: -18%;
+        z-index:1;
     }
 }

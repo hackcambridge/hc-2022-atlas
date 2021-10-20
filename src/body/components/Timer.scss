@@ -11,18 +11,18 @@
     @include glassmorphism();
     border-radius: 12px;
     min-width: calc(min(1.5in, 15vh)*6);
+    min-height: 30%;
 }
 
 .Timer > * {
-    @include industry-bold();
-    opacity: 0.8;    
+    @include helvetica();   
 }
 
 .Timer h1 {
     color: $white;
     font-size: calc(min(1.5in, 15vh));
     margin-bottom: 0%;
-    margin-top: 0%;
+    margin-top: 5%;
 }
 
 .Timer h3 {

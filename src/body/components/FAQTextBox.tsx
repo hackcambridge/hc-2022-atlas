@@ -19,10 +19,10 @@ const theme = {
 export default function FAQTextBox({question, answer, folded, onButtonClick}: FAQTextBoxProps) {
     return (
         <div className='FAQTextBox'>
-            <button className='FAQ-button' onClick={onButtonClick}>{question}</button>
+            <button className='FAQ-button' onClick={onButtonClick}><p>{question}</p></button>
             <Collapse isOpened={!folded}>
                 <div className="text">
-                    <div>{answer}</div>
+                    <div >{answer}</div>
                 </div>
             </Collapse>
         </div>

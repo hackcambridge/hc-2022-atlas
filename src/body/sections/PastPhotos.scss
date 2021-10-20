@@ -4,10 +4,20 @@
 
 
 .PastPhotos {
+    margin-left: 1%;
+    z-index: 1;
+
     h1 {
         @include industry-bold();
+        font-size: calc(min(0.7in, 8vw));
         color: $green;
-        padding: 5%;
-        padding-bottom: 0%;
+        margin-left: 9%;
+    }
+    h2 {
+        @include industry-bold();
+        font-size: calc(min(0.4in, 4vw));
+        color: $green;
+        margin-top: -3%;
+        margin-left: 9.3%;
     }
 }

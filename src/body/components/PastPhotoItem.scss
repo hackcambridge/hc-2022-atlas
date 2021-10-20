@@ -3,14 +3,14 @@
 @import "../../shared/style/util.scss";
 
 .PastPhotoItem {
-    min-height: 30vh;
+    min-height: 50vh;
+    min-width: 30vw;
     background-position: center;
     background-size: cover;
     background-image: url("../../shared//img/001-idea.png");
-    border-radius: 5%;
-    border-style: none;
-    @include glassmorphism();
-    margin: 20px;
+    border-radius: 5px;
+    //@include glassmorphism();
+    margin: 40px;
     .past-photo-item__hover {
         min-height: inherit;
         border-radius: inherit;

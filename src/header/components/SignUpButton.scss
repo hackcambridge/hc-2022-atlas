@@ -1,17 +1,17 @@
 .SignUp {
     color: white;
-    background-color: dodgerblue;
+    background-color: rgb(181, 204, 226);
     text-decoration: none;
-    border-radius: 5%;
-    min-height: 40px;
-    min-width: 70px;
+    border-radius: 5px;
+    min-height: 0.05vw;
+    min-width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .SignUp:hover {
-    color: dodgerblue;
+    color: rgb(135, 169, 202);
     background-color: white;
-    border-radius: 10%;
+    border-radius: 5px;
 }
