@@ -5,6 +5,7 @@ import './Footer.scss';
 import fb from '../shared/img/facebook.png';
 import linkedin from '../shared/img/linkedin.png';
 import instagram from '../shared/img/instagram.png';
+import email from '../shared/img/email.png';
 import MailingListForm from "./MailingListForm";
 
 
@@ -13,10 +14,13 @@ export type FooterProps = {};
 export default function Footer(props: FooterProps) {
     return <div className="Footer">
         <div className="JoinUs">
-            <h1>Join our mailing list!</h1>
-            <MailingListForm />
+            <a href="https://forms.gle/cEpr24HDZf2xRWwm8"><h1>Join our mailing list!</h1></a>
+            {/* <MailingListForm /> */}
         </div>
         <div className="SocialMedia">
+            <a href="mailto://team@hackcambridge.com">
+                <img src={email} alt="email" />
+            </a>
             <a href="https://www.facebook.com/hackcambridge">
                 <img src={fb} alt="Facebook"/>
             </a>

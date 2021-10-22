@@ -7,6 +7,6 @@ export type SignUpButtonProps = {
 
 export default function SignUpButton({href}: SignUpButtonProps) {
     return (
-        <a href={href} className="SignUp">Application Starts Soon</a>
+        <a href={href} className="SignUp">Applications Start Soon</a>
     );
 }

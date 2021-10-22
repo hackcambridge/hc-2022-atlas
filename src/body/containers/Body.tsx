@@ -9,10 +9,18 @@ import Sponsors, { Sponsor } from "../sections/Sponsors";
 import SponsorShowcase from "../sections/SponsorShowcase";
 import './Body.scss';
 
-import photo1 from "../../shared/img/past-photos/1.jpg";
-import photo2 from "../../shared/img/past-photos/2.jpg";
-import photo3 from "../../shared/img/past-photos/3.jpg";
-import photo4 from "../../shared/img/past-photos/4.jpg";
+import timeline from '../../shared/img/Timeline.png';
+
+import hc2016 from "../../shared/img/past-photos/hc-2016-1.jpg";
+import hc2017 from "../../shared/img/past-photos/hc-2017-1.jpg";
+import hc2018_1 from "../../shared/img/past-photos/hc-2018-1.jpg";
+import hc2018_2 from "../../shared/img/past-photos/hc-2018-2.jpg";
+import hc2019_1 from "../../shared/img/past-photos/hc-2019-1.jpg";
+import hc2019_2 from "../../shared/img/past-photos/hc-2019-2.jpg";
+import hc2019_3 from "../../shared/img/past-photos/hc-2019-3.jpg";
+import hc2020_1 from "../../shared/img/past-photos/hc-2020-1.jpg";
+import hc2020_2 from "../../shared/img/past-photos/hc-2020-2.jpg";
+import hc2021 from '../../shared/img/past-photos/hc-2021-1.png';
 
 import zoey from '../../shared/img/committee/Zoey.jpg';
 import theo from '../../shared/img/committee/Theo.jpg';
@@ -21,12 +29,21 @@ import marcus from '../../shared/img/committee/Marcus.jpg';
 import jonathan from '../../shared/img/committee/Jonathan.jpg';
 import ayush from '../../shared/img/committee/Ayush.jpg';
 import vincent from '../../shared/img/committee/Vincent.jpeg';
+import jacky from '../../shared/img/committee/Jacky.jpeg';
+import holly from '../../shared/img/committee/Holly.jpg';
+import katrina from '../../shared/img/committee/Katrina.jpg';
+import rishita from '../../shared/img/committee/Rishita.jpg';
 
-import placeHolderLogo from '../../shared/img/White Logo.png';
-import mw from '../../shared/img/sponsors/marshall_wace_transparent.png';
+import placeHolderLogo from '../../shared/img/Logo_White.png';
+import mw from '../../shared/img/sponsors/marshall_wace_blue.png';
 import reply from '../../shared/img/sponsors/reply_logo.svg';
 import huawei from '../../shared/img/sponsors/huawei.png';
 import citadel from '../../shared/img/sponsors/citadel.png';
+import graphcore from '../../shared/img/sponsors/graphcore.png';
+import gresearch from '../../shared/img/sponsors/g-research.png';
+import janestreet from '../../shared/img/sponsors/janestreet.png';
+import wolfram from '../../shared/img/sponsors/wolfram.png';
+import Timeline from "../sections/Timeline";
 
 export type BodyProp = {
 
@@ -45,6 +62,20 @@ const cohost : Sponsor =
     };
 
 const tera : Sponsor[] = [
+    // {
+    //     name: "Huawei",
+    //     tier: 'Tera',
+    //     href: 'https://www.huawei.com/',
+    //     image: huawei,
+    //     isPlaceHolder: false
+    // },
+    {
+        name: "Something",
+        tier: 'Tera',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: true
+    },
     {
         name: "Reply",
         tier: 'Tera',
@@ -53,18 +84,11 @@ const tera : Sponsor[] = [
         isPlaceHolder: false
     },
     {
-        name: "Huawei",
-        tier: 'Tera',
-        href: 'https://www.huawei.com/',
-        image: huawei,
-        isPlaceHolder: false
-    },
-    {
-        name: "Something",
+        name: "Something else",
         tier: 'Tera',
         href: '',
         image: placeHolderLogo,
-        isPlaceHolder: false
+        isPlaceHolder: true
     }
 ];
 
@@ -74,37 +98,37 @@ const giga: Sponsor[] = [
         tier: 'Giga',
         href: '',
         image: placeHolderLogo,
-        isPlaceHolder: false
+        isPlaceHolder: true
     },
     {
-        name: "Something3",
+        name: "Graphcore",
         tier: 'Giga',
-        href: '',
-        image: placeHolderLogo,
+        href: 'https://www.graphcore.ai/',
+        image: graphcore,
         isPlaceHolder: false
     },
     {
         name: "Something4",
-        tier: 'Tera',
+        tier: 'Giga',
         href: '',
         image: placeHolderLogo,
-        isPlaceHolder: false
+        isPlaceHolder: true
     }
 ];
 
 const mega: Sponsor[] = [
     {
-        name: "Something5",
+        name: "Something7",
         tier: 'Mega',
         href: '',
         image: placeHolderLogo,
-        isPlaceHolder: false
+        isPlaceHolder: true
     },
     {
-        name: "Something6",
+        name: "G-Research",
         tier: 'Mega',
-        href: '',
-        image: placeHolderLogo,
+        href: 'https://www.gresearch.co.uk/',
+        image: gresearch,
         isPlaceHolder: false
     },
     {
@@ -112,46 +136,32 @@ const mega: Sponsor[] = [
         tier: 'Mega',
         href: '',
         image: placeHolderLogo,
+        isPlaceHolder: true
+    },
+    {
+        name: "Jane Street",
+        tier: 'Mega',
+        href: 'https://www.janestreet.com/',
+        image: janestreet,
         isPlaceHolder: false
-    }
+    },
+    {
+        name: "Something7",
+        tier: 'Mega',
+        href: '',
+        image: placeHolderLogo,
+        isPlaceHolder: true
+    },
 ];
 
 const kilo: Sponsor[] = [
     {
-        name: "Something8",
+        name: "Wolfram",
         tier: 'Kilo',
-        href: '',
-        image: placeHolderLogo,
+        href: 'https://www.wolfram.com/',
+        image: wolfram,
         isPlaceHolder: false
     },
-    {
-        name: "Something9",
-        tier: 'Kilo',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: false
-    },
-    {
-        name: "Something10",
-        tier: 'Kilo',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: false
-    },
-    {
-        name: "Something11",
-        tier: 'Kilo',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: false
-    },
-    {
-        name: "Something12",
-        tier: 'Kilo',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: false
-    }
 ];
 
 const faqQuestions = [
@@ -159,6 +169,11 @@ const faqQuestions = [
         question: "What is a hackathon?",
         answer: "A hackathon is an invention marathon. Thoughts become things. Attendees work in teams of up to 5 people to hack together a prototype to solve a problem; this could be a web app, hardware-hack, or something completely different.",
         folded: false
+    },
+    {
+        question: "How does the hybrid Hackathon work？Can my team be considered for prizes or chat with your sponsors?",
+        answer: "We will invite ~300 participants to join us in-person at Cambridge for the Event and 200 to join us through Discord. All workshops and engagement sessions will happen in-person while being live-streamed on Discord. Our sponsors will join Discord to interact with you if you participate online. Judging for online participants will take place through Discord too. When we invite you to the event, the email will specify whether we would be able to offer you a place offline. We would really hope to accommodate everyone offline, but your safety and health is our top one priority.",
+        folded: true
     },
     {
         question: "How is the hackathon going to take place?",
@@ -184,25 +199,49 @@ const faqQuestions = [
         question: "Is Hack Cambridge Atlas free to attend?",
         answer: "Absolutely! Participation is free for all invited hackers. We provide interesting workshops, entertaining activties, and some swag during the event.",
         folded: true
-    }
+    },
 ];
 
 const pastPhotos = [
     {
-        photo: photo1,
-        caption: "This is a caption"
+        photo: hc2021,
+        caption: "Hex Cambridge"
     },
     {
-        photo: photo2,
-        caption: "This is a caption"
+        photo: hc2020_1,
+        caption: "Hack Cambridge 101"
     },
     {
-        photo: photo3,
-        caption: "This is a caption"
+        photo: hc2020_2,
+        caption: "Hack Cambridge 101"
     },
     {
-        photo: photo4,
-        caption: "This is a caption"
+        photo: hc2019_1,
+        caption: "Hack Cambridge 4D"
+    },
+    {
+        photo: hc2019_2,
+        caption: "Hack Cambridge 4D"
+    },
+    {
+        photo: hc2019_3,
+        caption: "Hack Cambridge 4D"
+    },
+    {
+        photo: hc2018_1,
+        caption: "Hack Cambridge Ternary"
+    },
+    {
+        photo: hc2018_2,
+        caption: "Hack Cambridge Ternary"
+    },
+    {
+        photo: hc2017,
+        caption: "Hack Cambridge Recurse"
+    },
+    {
+        photo: hc2016,
+        caption: "Hack Cambridge 2016 -- Where we started"
     }
 ];
 
@@ -232,7 +271,7 @@ const committeInfo = [
         visible: true
     },
     {
-        image: "sth.jpg",
+        image: holly,
         caption: "Head of Design",
         title: "Holly",
         visible: true
@@ -244,7 +283,7 @@ const committeInfo = [
         visible: true
     },
     {
-        image: "sth.jpg",
+        image: rishita,
         caption: "Head of Publicity",
         title: "Rishita",
         visible: true
@@ -262,19 +301,32 @@ const committeInfo = [
         visible: true
     },
     {
-        image: "sth.jpg",
-        caption: "Name10",
-        title: "Name",
+        image: jacky,
+        caption: "Development",
+        title: "Jacky",
+        visible: true
+    },
+    {
+        image: katrina,
+        caption: "Committee",
+        title: "Katrina",
+        visible: true
+    },
+    {
+        image: placeHolderLogo,
+        caption: "Committee",
+        title: "Committee",
         visible: true
     }
 ];
 
-const linkToJoin = '';
+const linkToJoin = 'https://forms.gle/2rNYCxYPBcUXQ7EC8';
 
 export default function Body(props: BodyProp) {
     return (
         <div className="Body">
             <Landing />
+            <Timeline timelinePhoto={timeline}/>
             <AboutUs />
             <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />

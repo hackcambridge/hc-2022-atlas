@@ -1,5 +1,4 @@
 import React from 'react';
-import CommitteeHexagonGrid from '../components/CommitteeHexagonGrid';
 import HexGrid, { HexProps } from '../components/HexGrid';
 import Fade from 'react-reveal';
 
@@ -12,10 +11,10 @@ export type CommitteeProps = {
 
 export default function Committee({committeeInfo, linkToJoin}: CommitteeProps) {
     return (
-        <div className={"Committee"}>
+        <div className={"Committee"} id="team">
             <h1>Meet our Team!</h1>
             <Fade bottom>
-            <HexGrid className={"hex-committee"} info={committeeInfo} layoutInfo={{nHexaBig: 10, nHexaMed: 4, baseSize:"100vw"}}/>
+            <HexGrid className={"hex-committee"} info={committeeInfo} layoutInfo={{nHexaBig: 14, nHexaMed: 4, nHexaSmall: 2, baseSize:"100vw"}}/>
             </Fade>
             <div className={"join-us"}>
                 <a href={linkToJoin}>Interested in joining the team?</a>

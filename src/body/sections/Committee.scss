@@ -17,19 +17,22 @@
     .join-us {
         width: 100%;
         display: flex;
-        justify-content:flex-end;
+        justify-content:center;
         margin-bottom: 5%;
         a {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 15vw;
-            height: 5vh;   
-            margin-right: 5%;
+            // width: 15vw;
+            // height: 5vh;
+            text-align: center;
+            padding: 10px;
+            //margin-right: 5%;
             background-color: $blue;
             color: $white;
             text-decoration: none;
             border-radius: 5%;
+            opacity: 0.9;
             &:hover {
                 color: $blue;
                 background-color: transparent;

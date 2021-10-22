@@ -3,7 +3,7 @@ import './Landing.scss';
 import Timer from '../components/Timer';
 // import background from '../../shared/img/world_map_coloured.svg';
 import background from '../../shared/img/Colour-updated.png';
-import { Parallax, useController } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal';
 
 // Format is MM/DD/YYYY
@@ -17,7 +17,6 @@ export type LandingProps = {
  * Landing Section
  */
 export default function Landing({name}: LandingProps) {
-    // TODO: Need to make the moving earth thing
     // TODO: Move state up to Landing and define all the constants here
     return (
         <div className="Landing">

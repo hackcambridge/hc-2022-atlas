@@ -1,7 +1,6 @@
 import { RouteComponentProps } from "@reach/router";
 import React, { useLayoutEffect } from "react";
 import Body from "../../body/containers/Body";
-import MovingBackground from "./MovingBackground";
 import {ParallaxProvider, useController} from 'react-scroll-parallax';
 import './Home.scss';
 import Footer from "../../footer/Footer";

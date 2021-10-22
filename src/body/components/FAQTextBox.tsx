@@ -1,32 +1,42 @@
-import React, { MouseEventHandler } from 'react';
-import './FAQTextBox.scss';
-import {Collapse} from 'react-collapse';
-import { Transition } from 'react-transition-group';
+import React, { MouseEventHandler } from "react";
+import "./FAQTextBox.scss";
+import { Collapse } from "react-collapse";
+// import { Transition } from "react-transition-group";
+import { Fade } from "react-reveal";
 //import Collapse from 'react-bootstrap/Collapse';
 
 export type FAQTextBoxProps = {
-    question: string;
-    answer: string;
-    folded: boolean;
-    onButtonClick: MouseEventHandler<HTMLButtonElement>;
+  question: string;
+  answer: string;
+  folded: boolean;
+  onButtonClick: MouseEventHandler<HTMLButtonElement>;
 };
 
-const theme = {
-    collapse: 'ReactCollapse--collapse',
-    content: 'ReactCollapse--content'
-  }
+// const theme = {
+//   collapse: "ReactCollapse--collapse",
+//   content: "ReactCollapse--content",
+// };
 
-export default function FAQTextBox({question, answer, folded, onButtonClick}: FAQTextBoxProps) {
-    return (
-        <div className='FAQTextBox'>
-            <button className='FAQ-button' onClick={onButtonClick}><p>{question}</p></button>
-            <Collapse isOpened={!folded}>
-                <div className="text">
-                    <div >{answer}</div>
-                </div>
-            </Collapse>
-        </div>
-    );
+export default function FAQTextBox({
+  question,
+  answer,
+  folded,
+  onButtonClick,
+}: FAQTextBoxProps) {
+  return (
+    <Fade right>
+      <div className="FAQTextBox">
+        <button className="FAQ-button" onClick={onButtonClick}>
+          <p>{question}</p>
+        </button>
+        <Collapse isOpened={!folded}>
+          <div className="text">
+            <div>{answer}</div>
+          </div>
+        </Collapse>
+      </div>
+    </Fade>
+  );
 }
 
 /*

@@ -33,7 +33,7 @@
     .about-us-with-dec {
         display: flex;
         p {
-            @include industry-simple();
+            @include open-sans();
             @include glassmorphism();
             border-radius: 8px;
             padding: calc(min(30px, 10%));

@@ -1,22 +1,21 @@
-import logo from "./shared/img/hcf-logo-white.png";
+import logo from "./shared/img/Logo_White.png";
 import './App.scss';
 import Header from './header/containers/Header';
-import {Router} from '@reach/router';
 import Home from './shared/containers/Home';
 
 function App() {
   const navElements = [
-    {name: "About Us", href: "/"},
-    {name: "FAQ", href: "/"},
-    {name: "Our Sponsors", href: "/"},
-    {name: "Meet the team", href: "/"}
+    {name: "About Us", href: "#about-us"},
+    {name: "FAQ", href: "#faq"},
+    {name: "Our Sponsors", href: "#sponsors"},
+    {name: "Meet the team", href: "#team"}
   ];
   return (
     <div className="App">
       <Header logoPath={logo} navElements={navElements}/>
-      <Router>
+      {/* <Router> */}
         <Home path='/'/>
-      </Router>
+      {/* </Router> */}
     </div>
   );
 }

@@ -7,17 +7,21 @@
   flex-direction: column;
   align-items: center;
   h1 {
+    text-align: left;
+    min-width: 80%;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     @include industry-bold();
     font-size: calc(min(0.7in, 8vw));
     color: $green;
-    margin-left: -60%;
   }
   h2 {
     @include industry-simple();
     color: $blue;
   }
 
-  .hex-cohost {
+  .hex-one-only {
     // Customize grid for our use case
     margin: 0%;
     padding: 0%;
@@ -40,6 +44,12 @@
     }
     section {
       margin-bottom: 5%;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .hex-five {
+      margin-right: calc(var(--size));
     }
   }
 }

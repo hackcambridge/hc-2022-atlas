@@ -7,6 +7,7 @@ export type HexGridProps = {
   layoutInfo: {
     nHexaBig: number;
     nHexaMed: number;
+    nHexaSmall: number;
     baseSize: string;
   };
 };
@@ -34,14 +35,16 @@ const Hex = ({ title, caption, image, visible, href }: HexProps) => {
 export interface CustomCSSForHexGrid extends CSSProperties {
   "--Nhexa-big": number;
   "--Nhexa-med": number;
+  "--Nhexa-small": number;
   "--base-size": string;
 }
 
 export default function HexGrid({ className, info, layoutInfo }: HexGridProps) {
-  const getStyle = (nHexaBig: number, nHexaMed: number, baseSize: string) => {
+  const getStyle = (nHexaBig: number, nHexaMed: number, nHexaSmall: number, baseSize: string) => {
     return {
       "--Nhexa-big": nHexaBig,
       "--Nhexa-med": nHexaMed,
+      "--Nhexa-small": nHexaSmall,
       "--base-size": baseSize,
     } as CustomCSSForHexGrid;
   };
@@ -52,12 +55,13 @@ export default function HexGrid({ className, info, layoutInfo }: HexGridProps) {
       style={getStyle(
         layoutInfo.nHexaBig,
         layoutInfo.nHexaMed,
+        layoutInfo.nHexaSmall,
         layoutInfo.baseSize
       )}
     >
       <section>
-        {info.map((comInfo) => (
-          <Hex key={comInfo.caption} {...comInfo} />
+        {info.map((comInfo, i) => (
+          <Hex key={comInfo.caption + i} {...comInfo} />
         ))}
       </section>
     </div>
