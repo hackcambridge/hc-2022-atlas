@@ -278,7 +278,7 @@ const committeInfo = [
     },
     {
         image: ayush,
-        caption: "Head of Internal External Coordination",
+        caption: "Head of Int/Ext Coordination",
         title: "Ayush",
         visible: true
     },

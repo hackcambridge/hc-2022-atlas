@@ -22,7 +22,7 @@ export default function PastPhotos({items}: PastPhotosProps) {
                 <h2>on our past events</h2>
             </Fade>
             <Fade right>
-            <AliceCarousel disableButtonsControls mouseTracking touchTracking items={items.map((item, i) => <PastPhotoItem key={i} {...item}/>)} responsive={responsive} controlsStrategy="alternate" />
+            <AliceCarousel autoPlay autoPlayInterval={2000} autoPlayStrategy="default" disableButtonsControls mouseTracking touchTracking items={items.map((item, i) => <PastPhotoItem key={i} {...item}/>)} responsive={responsive} controlsStrategy="alternate" />
             </Fade>
         </div>
     );
