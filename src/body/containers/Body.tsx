@@ -249,7 +249,7 @@ const pastPhotos = [
 const committeInfo = [
     {
         image: zoey,
-        caption: "The Boss",
+        caption: "General Manager",
         title: "Zoey",
         visible: true
     },
