@@ -33,6 +33,7 @@ import jacky from '../../shared/img/committee/Jacky.jpeg';
 import holly from '../../shared/img/committee/Holly.jpg';
 import katrina from '../../shared/img/committee/Katrina.jpg';
 import rishita from '../../shared/img/committee/Rishita.jpg';
+import xinyu from '../../shared/img/committee/Xinyu.jpg';
 
 import placeHolderLogo from '../../shared/img/Logo_White.png';
 import mw from '../../shared/img/sponsors/marshall_wace_blue.png';
@@ -313,9 +314,9 @@ const committeInfo = [
         visible: true
     },
     {
-        image: placeHolderLogo,
-        caption: "Committee",
-        title: "Committee",
+        image: xinyu,
+        caption: "Sponsorship",
+        title: "Xinyu",
         visible: true
     }
 ];
