@@ -6,7 +6,7 @@ import { useWindowResize } from '../../shared/util/useWindowResize';
 
 export type Sponsor = {
     name: string,
-    tier: 'Cohost'|'Tera'|'Giga'|'Mega'|'Kilo',
+    tier: 'Cohost'|'Tera'|'Giga'|'Mega'|'Mega + Meal' | 'Mega + Coffee'|'Kilo'|'',
     image: string,
     href: string,
     isPlaceHolder: boolean
@@ -30,7 +30,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
             <Fade left>
             <HexGrid className={"hex-one-only"} info={[{
                 title: cohost.isPlaceHolder? "Coming soon": cohost.name,
-                caption: "",
+                caption: cohost.tier,
                 image: cohost.image,
                 visible: true,
                 href: cohost.href
@@ -40,7 +40,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
             <Fade right>
             <HexGrid info={tera.map(sponsor => {return {
                 title: sponsor.isPlaceHolder? "Coming soon": sponsor.name,
-                caption: "",
+                caption: sponsor.tier,
                 image: sponsor.image,
                 visible: true,
                 href: sponsor.href
@@ -50,7 +50,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
             <Fade left>
             <HexGrid info={giga.map(sponsor => {return {
                 title: sponsor.isPlaceHolder? "Coming soon": sponsor.name,
-                caption: "",
+                caption: sponsor.tier,
                 image: sponsor.image,
                 visible: true,
                 href: sponsor.href
@@ -60,7 +60,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
             <Fade right>
             <HexGrid className="hex-five" info={mega.map(sponsor => {return {
                 title: sponsor.isPlaceHolder? "Coming soon": sponsor.name,
-                caption: "",
+                caption: sponsor.tier,
                 image: sponsor.image,
                 visible: true,
                 href: sponsor.href
@@ -70,7 +70,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
             <Fade left>
             <HexGrid className={"hex-one-only"} info={kilo.map(sponsor => {return {
                 title: sponsor.isPlaceHolder? "Coming soon": sponsor.name,
-                caption: "",
+                caption: sponsor.tier,
                 image: sponsor.image,
                 visible: true,
                 href: sponsor.href

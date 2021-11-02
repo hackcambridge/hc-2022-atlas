@@ -44,6 +44,7 @@ import graphcore from '../../shared/img/sponsors/graphcore.png';
 import gresearch from '../../shared/img/sponsors/g-research.png';
 import janestreet from '../../shared/img/sponsors/janestreet.png';
 import wolfram from '../../shared/img/sponsors/wolfram.png';
+import featurespace from '../../shared/img/sponsors/featurespace.png';
 import Timeline from "../sections/Timeline";
 
 export type BodyProp = {
@@ -72,7 +73,7 @@ const tera : Sponsor[] = [
     // },
     {
         name: "Something",
-        tier: 'Tera',
+        tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
@@ -86,7 +87,7 @@ const tera : Sponsor[] = [
     },
     {
         name: "Something else",
-        tier: 'Tera',
+        tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
@@ -96,7 +97,7 @@ const tera : Sponsor[] = [
 const giga: Sponsor[] = [
     {
         name: "Something2",
-        tier: 'Giga',
+        tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
@@ -110,7 +111,7 @@ const giga: Sponsor[] = [
     },
     {
         name: "Something4",
-        tier: 'Giga',
+        tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
@@ -120,35 +121,35 @@ const giga: Sponsor[] = [
 const mega: Sponsor[] = [
     {
         name: "Something7",
-        tier: 'Mega',
+        tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
     },
     {
         name: "G-Research",
-        tier: 'Mega',
+        tier: 'Mega + Meal',
         href: 'https://www.gresearch.co.uk/',
         image: gresearch,
         isPlaceHolder: false
     },
     {
-        name: "Something7",
-        tier: 'Mega',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "Featurespace",
+        tier: 'Mega + Coffee',
+        href: 'https://www.featurespace.com/',
+        image: featurespace,
+        isPlaceHolder: false
     },
     {
         name: "Jane Street",
-        tier: 'Mega',
+        tier: 'Mega + Meal',
         href: 'https://www.janestreet.com/',
         image: janestreet,
         isPlaceHolder: false
     },
     {
         name: "Something7",
-        tier: 'Mega',
+        tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
