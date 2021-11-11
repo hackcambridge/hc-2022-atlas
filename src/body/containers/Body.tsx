@@ -3,10 +3,10 @@ import AboutUs from "../sections/AboutUs";
 import Committee from "../sections/Committee";
 import FAQ from "../sections/FAQ";
 import Landing from "../sections/Landing";
-import PastHackathons from "../sections/PastHackathons";
+// import PastHackathons from "../sections/PastHackathons";
 import PastPhotos from "../sections/PastPhotos";
 import Sponsors, { Sponsor } from "../sections/Sponsors";
-import SponsorShowcase from "../sections/SponsorShowcase";
+// import SponsorShowcase from "../sections/SponsorShowcase";
 import './Body.scss';
 
 import timeline from '../../shared/img/Timeline.png';
@@ -38,13 +38,14 @@ import xinyu from '../../shared/img/committee/Xinyu.jpg';
 import placeHolderLogo from '../../shared/img/Logo_White.png';
 import mw from '../../shared/img/sponsors/marshall_wace_blue.png';
 import reply from '../../shared/img/sponsors/reply_logo.svg';
-import huawei from '../../shared/img/sponsors/huawei.png';
-import citadel from '../../shared/img/sponsors/citadel.png';
+// import huawei from '../../shared/img/sponsors/huawei.png';
+// import citadel from '../../shared/img/sponsors/citadel.png';
 import graphcore from '../../shared/img/sponsors/graphcore.png';
 import gresearch from '../../shared/img/sponsors/g-research.png';
 import janestreet from '../../shared/img/sponsors/janestreet.png';
 import wolfram from '../../shared/img/sponsors/wolfram.png';
-import featurespace from '../../shared/img/sponsors/featurespace.png';
+// import featurespace from '../../shared/img/sponsors/featurespace.png';
+import featurespace2 from '../../shared/img/sponsors/featurespace2.png';
 import Timeline from "../sections/Timeline";
 
 export type BodyProp = {
@@ -137,7 +138,7 @@ const mega: Sponsor[] = [
         name: "Featurespace",
         tier: 'Mega + Coffee',
         href: 'https://www.featurespace.com/',
-        image: featurespace,
+        image: featurespace2,
         isPlaceHolder: false
     },
     {

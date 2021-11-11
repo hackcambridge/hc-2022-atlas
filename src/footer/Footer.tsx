@@ -6,7 +6,7 @@ import fb from '../shared/img/facebook.png';
 import linkedin from '../shared/img/linkedin.png';
 import instagram from '../shared/img/instagram.png';
 import email from '../shared/img/email.png';
-import MailingListForm from "./MailingListForm";
+// import MailingListForm from "./MailingListForm";
 
 
 export type FooterProps = {};
