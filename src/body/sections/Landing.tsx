@@ -7,16 +7,17 @@ import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal';
 
 // Format is MM/DD/YYYY
-export const targetDate = new Date('01/22/2022');
+export const targetDate = new Date('12/20/2021');
 
 export type LandingProps = {
     name?: string;
+    href: string;
 };
 
 /**
  * Landing Section
  */
-export default function Landing({name}: LandingProps) {
+export default function Landing({name, href}: LandingProps) {
     // TODO: Move state up to Landing and define all the constants here
     return (
         <div className="Landing">
@@ -41,7 +42,8 @@ export default function Landing({name}: LandingProps) {
                 </Fade>
                     <div className="landing-col2">
                         {/* <LightBulb /> */}
-                        <Timer targetDate={targetDate} until={"Event Day"}/>
+                        <Timer targetDate={targetDate} until={"Applications Close"}/>
+                        <a href={href} className="apply-button">Apply today!</a>
                     </div>
             </div>
             

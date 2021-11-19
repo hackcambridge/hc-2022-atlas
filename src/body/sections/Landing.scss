@@ -96,10 +96,39 @@
 .landing-col2 {
     flex: 5;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 5%;
+    .apply-button {
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+        background-color: turquoise;
+        text-decoration: none;
+        border-radius: 5px;
+        // min-height: fit-content;
+        // min-width: fit-content;
+        height: max-content;
+        width: max-content;
+        padding: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include industry-bold();
+        font-size: xx-large;
+        &:hover {
+            color: rgb(135, 169, 202);
+            background-color: white;
+            border-radius: 5px;
+        }
+        @media screen and (max-width: 1000px) {
+            font-size: large;
+            padding: 10px;
+            height: max-content;
+        }
+    }
 }
+
 
 @media screen and (max-width: 1000px) {
     .landing-main {
@@ -127,4 +156,5 @@
         font-size: calc(min(1.2in, 4vh));
         color: $white;
     }
+
 }

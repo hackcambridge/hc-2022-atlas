@@ -10,7 +10,7 @@ export default function Nav({elements}:NavProps) {
     return (
         <div className="Nav">
             {elements.map((element) => <NavElement key={element.name} {...element}/>)}
-            <SignUpButton href="/"/>
+            <SignUpButton href="/apply"/>
         </div>
     );
 }

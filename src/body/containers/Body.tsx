@@ -45,7 +45,8 @@ import gresearch from '../../shared/img/sponsors/g-research.png';
 import janestreet from '../../shared/img/sponsors/janestreet.png';
 import wolfram from '../../shared/img/sponsors/wolfram.png';
 // import featurespace from '../../shared/img/sponsors/featurespace.png';
-import featurespace2 from '../../shared/img/sponsors/featurespace2.png';
+// import featurespace2 from '../../shared/img/sponsors/featurespace2.png';
+import featurespace3 from '../../shared/img/sponsors/featurespace3.png';
 import Timeline from "../sections/Timeline";
 
 export type BodyProp = {
@@ -138,7 +139,7 @@ const mega: Sponsor[] = [
         name: "Featurespace",
         tier: 'Mega + Coffee',
         href: 'https://www.featurespace.com/',
-        image: featurespace2,
+        image: featurespace3,
         isPlaceHolder: false
     },
     {
@@ -324,11 +325,12 @@ const committeInfo = [
 ];
 
 const linkToJoin = 'https://forms.gle/2rNYCxYPBcUXQ7EC8';
+const linkToApply = '/apply';
 
 export default function Body(props: BodyProp) {
     return (
         <div className="Body">
-            <Landing />
+            <Landing href={linkToApply}/>
             <Timeline timelinePhoto={timeline}/>
             <AboutUs />
             <PastPhotos items={pastPhotos}/>
