@@ -171,7 +171,7 @@ const kilo: Sponsor[] = [
 const faqQuestions = [
     {
         question: "What is a hackathon?",
-        answer: "A hackathon is an invention marathon. Thoughts become things. Attendees work in teams of up to 5 people to hack together a prototype to solve a problem; this could be a web app, hardware-hack, or something completely different.",
+        answer: "A hackathon is an invention marathon. Thoughts become things. Attendees work in teams of up to 4 people to hack together a prototype to solve a problem; this could be a web app, hardware-hack, or something completely different.",
         folded: false
     },
     {
