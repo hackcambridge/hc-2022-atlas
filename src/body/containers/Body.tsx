@@ -34,6 +34,7 @@ import holly from '../../shared/img/committee/Holly.jpg';
 import katrina from '../../shared/img/committee/Katrina.jpg';
 import rishita from '../../shared/img/committee/Rishita.jpg';
 import xinyu from '../../shared/img/committee/Xinyu.jpg';
+import komal from '../../shared/img/committee/Komal.jpg';
 
 import placeHolderLogo from '../../shared/img/Logo_White.png';
 import mw from '../../shared/img/sponsors/marshall_wace_blue.png';
@@ -47,6 +48,9 @@ import wolfram from '../../shared/img/sponsors/wolfram.png';
 // import featurespace from '../../shared/img/sponsors/featurespace.png';
 // import featurespace2 from '../../shared/img/sponsors/featurespace2.png';
 import featurespace3 from '../../shared/img/sponsors/featurespace3.png';
+import hrt from '../../shared/img/sponsors/HRT.svg';
+import bigpay from '../../shared/img/sponsors/Bigpay.svg';
+
 import Timeline from "../sections/Timeline";
 
 export type BodyProp = {
@@ -122,11 +126,11 @@ const giga: Sponsor[] = [
 
 const mega: Sponsor[] = [
     {
-        name: "Something7",
-        tier: '',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "Hudson River Trading",
+        tier: 'Mega',
+        href: 'https://www.hudsonrivertrading.com/',
+        image: hrt,
+        isPlaceHolder: false
     },
     {
         name: "G-Research",
@@ -150,11 +154,11 @@ const mega: Sponsor[] = [
         isPlaceHolder: false
     },
     {
-        name: "Something7",
-        tier: '',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "BigPay",
+        tier: 'Mega',
+        href: 'https://www.bigpayme.com/',
+        image: bigpay,
+        isPlaceHolder: false
     },
 ];
 
@@ -320,6 +324,18 @@ const committeInfo = [
         image: xinyu,
         caption: "Sponsorship",
         title: "Xinyu",
+        visible: true
+    },
+    {
+        image: komal,
+        caption:"Design",
+        title: "Komal",
+        visible: true
+    },
+    {
+        image:placeHolderLogo,
+        caption:"",
+        title: "Join Us!",
         visible: true
     }
 ];
