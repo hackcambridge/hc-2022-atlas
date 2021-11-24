@@ -39,7 +39,7 @@ import komal from '../../shared/img/committee/Komal.jpg';
 import placeHolderLogo from '../../shared/img/Logo_White.png';
 import mw from '../../shared/img/sponsors/marshall_wace_blue.png';
 import reply from '../../shared/img/sponsors/reply_logo.svg';
-// import huawei from '../../shared/img/sponsors/huawei.png';
+import huawei from '../../shared/img/sponsors/huawei2.png';
 // import citadel from '../../shared/img/sponsors/citadel.png';
 import graphcore from '../../shared/img/sponsors/graphcore.png';
 import gresearch from '../../shared/img/sponsors/g-research.png';
@@ -70,20 +70,20 @@ const cohost : Sponsor =
     };
 
 const tera : Sponsor[] = [
-    // {
-    //     name: "Huawei",
-    //     tier: 'Tera',
-    //     href: 'https://www.huawei.com/',
-    //     image: huawei,
-    //     isPlaceHolder: false
-    // },
     {
-        name: "Something",
-        tier: '',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "Huawei",
+        tier: 'Tera',
+        href: 'https://www.huawei.com/',
+        image: huawei,
+        isPlaceHolder: false
     },
+    // {
+    //     name: "Something",
+    //     tier: '',
+    //     href: '',
+    //     image: placeHolderLogo,
+    //     isPlaceHolder: true
+    // },
     {
         name: "Reply",
         tier: 'Tera',
