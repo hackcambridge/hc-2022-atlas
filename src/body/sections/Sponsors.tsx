@@ -6,7 +6,7 @@ import { useWindowResize } from '../../shared/util/useWindowResize';
 
 export type Sponsor = {
     name: string,
-    tier: 'Cohost'|'Tera'|'Giga'|'Mega'|'Mega + Meal' | 'Mega + Coffee'|'Kilo'|'',
+    tier: 'Cohost'|'Tera'|'Giga' | 'Giga + Meal' |'Mega'|'Mega + Meal' | 'Mega + Coffee'|'Kilo'|'',
     image: string,
     href: string,
     isPlaceHolder: boolean

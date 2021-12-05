@@ -50,6 +50,7 @@ import wolfram from '../../shared/img/sponsors/wolfram.png';
 import featurespace3 from '../../shared/img/sponsors/featurespace3.png';
 import hrt from '../../shared/img/sponsors/HRT.svg';
 import bigpay from '../../shared/img/sponsors/Bigpay.svg';
+import deepgram from '../../shared/img/sponsors/deepgram.svg';
 
 import Timeline from "../sections/Timeline";
 
@@ -102,11 +103,11 @@ const tera : Sponsor[] = [
 
 const giga: Sponsor[] = [
     {
-        name: "Something2",
-        tier: '',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "Deepgram",
+        tier: 'Giga + Meal',
+        href: 'https://deepgram.com/',
+        image: deepgram,
+        isPlaceHolder: false
     },
     {
         name: "Graphcore",
@@ -116,12 +117,12 @@ const giga: Sponsor[] = [
         isPlaceHolder: false
     },
     {
-        name: "Something4",
+        name: "Something2",
         tier: '',
         href: '',
         image: placeHolderLogo,
         isPlaceHolder: true
-    }
+    },
 ];
 
 const mega: Sponsor[] = [
