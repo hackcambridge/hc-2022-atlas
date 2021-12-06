@@ -30,7 +30,7 @@ export default function FAQ({ qs }: FAQProps) {
         </Fade>
         {qs.map((qObject, i) =>
           i === openQuestion ? (
-            <div className={i % 2 === 1 ? "faq-col-3-1" : "faq-col-3-2"}>
+            <div key={qObject.question} className={i % 2 === 1 ? "faq-col-3-1" : "faq-col-3-2"}>
                 <FAQTextBox
                   key={qObject.question}
                   {...qObject}
@@ -45,7 +45,7 @@ export default function FAQ({ qs }: FAQProps) {
                 />
             </div>
           ) : (
-            <div className={i % 2 === 1 ? "faq-col-3-1" : "faq-col-3-2"}>
+            <div key={qObject.question} className={i % 2 === 1 ? "faq-col-3-1" : "faq-col-3-2"}>
                 <FAQTextBox
                   key={qObject.question}
                   {...qObject}

@@ -53,6 +53,7 @@ import bigpay from '../../shared/img/sponsors/Bigpay.svg';
 import deepgram from '../../shared/img/sponsors/deepgram.svg';
 
 import Timeline from "../sections/Timeline";
+import SponsorShowcase, { SponsorShowcaseInfo } from "../sections/SponsorShowcase";
 
 export type BodyProp = {
 
@@ -170,6 +171,32 @@ const kilo: Sponsor[] = [
         href: 'https://www.wolfram.com/',
         image: wolfram,
         isPlaceHolder: false
+    },
+];
+
+const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
+    {
+        sponsor: "Marshall Wace",
+        logo: mw,
+        text: `We are a global alternative investment management company where clients come first.
+        Our core purpose is to deliver returns for our clients who entrust their assets to our care.
+        As a firm, we have a hunger to do more, chasing innovation and pushing the boundaries of what’s possible. Technological innovation has long been the cornerstone of our business. We continuously invest in our systems, data, infrastructure and people in our efforts to maximise the alpha we deliver for our clients.
+        `
+    },
+    {
+        sponsor: "Reply",
+        logo: reply,
+        text: `Reply is a company that specialises in Consulting, Systems Integration and Digital Services with a focus on the conception, design and implementation of solutions based on the new communication channels and digital media. Reply partners with key industrial groups in defining and developing business models made possible by the new technological and communication paradigms such as Artificial Intelligence, Big Data, Cloud Computing, Digital Communication, the Internet of Things and Mobile and Social Networking. In so doing, it aims to optimise and integrate processes, applications and devices.`
+    },
+    {
+        sponsor: "Big Pay",
+        logo: bigpay,
+        text: `stuff`
+    },
+    {
+        sponsor: "Jane Street",
+        logo: janestreet,
+        text: "stuff"
     },
 ];
 
@@ -352,7 +379,7 @@ export default function Body(props: BodyProp) {
             <AboutUs />
             <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />
-            {/* <SponsorShowcase /> */}
+            <SponsorShowcase sponsors={sponsorShowcaseInfo}/>
             <Sponsors cohost={cohost} tera={tera} giga={giga} mega={mega} kilo={kilo}/>
             {/* <PastHackathons /> */}
             <Committee committeeInfo={committeInfo} linkToJoin={linkToJoin}/>
