@@ -26,13 +26,17 @@
         width: 20rem;
         margin: 0 auto;
       }
-      transform: scale(0.5);
+      transform: scale(0.8);
       transition: transform 300ms;
       opacity: 0.5;
     }
     .active-slide {
       transform: scale(1);
       opacity: 1;
+    }
+    .slick-slider {
+      display: flex;
+      align-items: center
     }
   }
 }
@@ -47,7 +51,7 @@
   justify-content: center;
   padding: 20px;
   height: 500px;
-  div {
+  .sponsor-logo {
     width: 100%;
     min-height: 100px;
     background-position: center;
@@ -56,6 +60,11 @@
   }
   p {
     @include helvetica();
+    font-size: larger;
     height: fit-content;
+    @media screen and (max-width: 1024px){
+      font-size: small;
+    }
   }
 }
+
