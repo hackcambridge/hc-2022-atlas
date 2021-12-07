@@ -190,9 +190,10 @@ const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
         text: `Reply is a company that specialises in Consulting, Systems Integration and Digital Services with a focus on the conception, design and implementation of solutions based on the new communication channels and digital media. Reply partners with key industrial groups in defining and developing business models made possible by the new technological and communication paradigms such as Artificial Intelligence, Big Data, Cloud Computing, Digital Communication, the Internet of Things and Mobile and Social Networking. In so doing, it aims to optimise and integrate processes, applications and devices.`
     },
     {
-        sponsor: "PlaceHolder1",
-        logo: placeHolderLogo,
-        text: `Coming Soon`
+        sponsor: "Huawei",
+        logo: huawei,
+        videoElement: ({className, width, height}) => (<iframe className={className} title="Video for Huawei" src="https://drive.google.com/file/d/18_USXDYK4exH8qNWeKUdiYggDg85j59k/preview" width={width} height={height} allow="autoplay" allowFullScreen></iframe>),
+        text: `Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices.`
     },
     {
         sponsor: "PlaceHolder2",

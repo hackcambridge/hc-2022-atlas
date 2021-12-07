@@ -12,6 +12,7 @@ export type SponsorShowcaseInfo = {
   logo: string;
   text: string;
   videoLink?: string;
+  videoElement?: ({className, width, height}:{className:string, width:string, height: string})=>JSX.Element
 };
 export type SponsorShowcaseProps = {
   sponsors: SponsorShowcaseInfo[];
@@ -44,6 +45,7 @@ export function SponsorShowcaseCard({
     <div className={"SponsorShowcaseCard"}>
       <div className={"sponsor-logo"} style={{ backgroundImage: `url(${sponsor.logo})` }}></div>
       {isCurrent && sponsor.videoLink && <ReactPlayer url={sponsor.videoLink} controls={true} width="90%" height="auto"/>}
+      {isCurrent && sponsor.videoElement && <sponsor.videoElement className={"customVideo"} width="90%" height="auto"/>}
       {isCurrent && <p style={ sponsor.videoLink?{fontSize: 'small'}:{}}>{sponsor.text}</p>}
     </div>
   );
