@@ -5,11 +5,13 @@ import { useState } from "react";
 import { useWindowResize } from "../../shared/util/useWindowResize";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Fade from 'react-reveal';
+import ReactPlayer from "react-player/lazy";
 
 export type SponsorShowcaseInfo = {
   sponsor: string;
   logo: string;
   text: string;
+  videoLink?: string;
 };
 export type SponsorShowcaseProps = {
   sponsors: SponsorShowcaseInfo[];
@@ -41,12 +43,14 @@ export function SponsorShowcaseCard({
   return (
     <div className={"SponsorShowcaseCard"}>
       <div className={"sponsor-logo"} style={{ backgroundImage: `url(${sponsor.logo})` }}></div>
-      {isCurrent && <p>{sponsor.text}</p>}
+      {isCurrent && sponsor.videoLink && <ReactPlayer url={sponsor.videoLink} controls={true} width="90%" height="auto"/>}
+      {isCurrent && <p style={ sponsor.videoLink?{fontSize: 'small'}:{}}>{sponsor.text}</p>}
     </div>
   );
 }
 
 export default function SponsorShowcase({ sponsors }: SponsorShowcaseProps) {
+  // eslint-disable-next-line
   const { width, height } = useWindowResize();
   const [imgIdx, setImgIdx] = useState(0);
   return (
@@ -64,8 +68,7 @@ export default function SponsorShowcase({ sponsors }: SponsorShowcaseProps) {
           nextArrow={<NextArrow />}
         >
           {sponsors.map((sponsor, idx) => (
-            <div className={idx === imgIdx ? "slide active-slide" : "slide"}>
-              {/* <img src={sponsor.logo}/> */}
+            <div key={idx} className={idx === imgIdx ? "slide active-slide" : "slide"}>
               <SponsorShowcaseCard
                 sponsor={sponsor}
                 isCurrent={idx === imgIdx}
