@@ -5,13 +5,14 @@ import { useState } from "react";
 import { useWindowResize } from "../../shared/util/useWindowResize";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Fade from 'react-reveal';
-import ReactPlayer from "react-player/lazy";
 
 export type SponsorShowcaseInfo = {
   sponsor: string;
   logo: string;
   text: string;
   videoLink?: string;
+  isPlaceHolder?: boolean;
+  logoMinHeight?: string;
   videoElement?: ({className, width, height}:{className:string, width:string, height: string})=>JSX.Element
 };
 export type SponsorShowcaseProps = {
@@ -21,7 +22,7 @@ export type SponsorShowcaseProps = {
 const PrevArrow = (props: any) => {
   return (
     <div className={"prev-arrow arrow"} onClick={props.onClick}>
-      <AiOutlineLeft />
+      <AiOutlineLeft color={"white"}/>
     </div>
   );
 };
@@ -29,7 +30,7 @@ const PrevArrow = (props: any) => {
 const NextArrow = (props: any) => {
   return (
     <div className={"next-arrow arrow"} onClick={props.onClick}>
-      <AiOutlineRight />
+      <AiOutlineRight color={"white"}/>
     </div>
   );
 };
@@ -42,11 +43,11 @@ export function SponsorShowcaseCard({
   isCurrent: boolean;
 }) {
   return (
-    <div className={"SponsorShowcaseCard"}>
-      <div className={"sponsor-logo"} style={{ backgroundImage: `url(${sponsor.logo})` }}></div>
-      {isCurrent && sponsor.videoLink && <ReactPlayer url={sponsor.videoLink} controls={true} width="90%" height="auto"/>}
-      {isCurrent && sponsor.videoElement && <sponsor.videoElement className={"customVideo"} width="90%" height="auto"/>}
-      {isCurrent && <p style={ sponsor.videoLink?{fontSize: 'small'}:{}}>{sponsor.text}</p>}
+    <div className={"SponsorShowcaseCard"} id="sponsor-showcase">
+      <div className={isCurrent && !sponsor.isPlaceHolder?"sponsor-logo-active sponsor-logo":"sponsor-logo"} style={{ backgroundImage: `url(${sponsor.logo})`, minHeight: sponsor.logoMinHeight }}></div>
+      {isCurrent && sponsor.videoLink && <video src={sponsor.videoLink} preload="auto" controls style={{width: "100%", height: "auto"}} ></video>}
+      {isCurrent && sponsor.videoElement && <sponsor.videoElement className={"customVideo"} width="100%" height="auto"/>}
+      {isCurrent && <p style={ sponsor.videoLink || sponsor.videoElement?{fontSize: 'small'}:{}}>{sponsor.text}</p>}
     </div>
   );
 }

@@ -178,7 +178,8 @@ const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
     {
         sponsor: "Marshall Wace",
         logo: mw,
-        videoLink: 'https://vimeo.com/516169123',
+        logoMinHeight: "100px",
+        videoLink: 'https://hc-upload.s3.eu-west-2.amazonaws.com/sponsor-videos/mw.mp4',
         text: `We are a global alternative investment management company where clients come first.
         Our core purpose is to deliver returns for our clients who entrust their assets to our care.
         As a firm, we have a hunger to do more, chasing innovation and pushing the boundaries of what’s possible. Technological innovation has long been the cornerstone of our business. We continuously invest in our systems, data, infrastructure and people in our efforts to maximise the alpha we deliver for our clients.
@@ -192,17 +193,20 @@ const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
     {
         sponsor: "Huawei",
         logo: huawei,
-        videoElement: ({className, width, height}) => (<iframe className={className} title="Video for Huawei" src="https://drive.google.com/file/d/18_USXDYK4exH8qNWeKUdiYggDg85j59k/preview" width={width} height={height} allow="autoplay" allowFullScreen></iframe>),
-        text: `Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices.`
+        //videoElement: ({className, width, height}) => (<iframe className={className} title="Video for Huawei" src="https://drive.google.com/file/d/18_USXDYK4exH8qNWeKUdiYggDg85j59k/preview" width={width} height={height} allow="autoplay" allowFullScreen></iframe>),
+        videoLink:"https://hc-upload.s3.eu-west-2.amazonaws.com/sponsor-videos/huawei.mp4",
+        text: `Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have more than 194,000 employees, and we operate in more than 170 countries and regions, serving more than three billion people around the world. Huawei is a private company wholly owned by its employees. Through the Union of Huawei Investment & Holding Co., Ltd., we implement an Employee Shareholding Scheme involving 104,572 employees. Only Huawei employees are eligible to participate. No government agency or outside organization holds shares in Huawei.`
     },
     {
         sponsor: "PlaceHolder2",
         logo: placeHolderLogo,
+        isPlaceHolder: true,
         text: "Coming Soon"
     },
     {
         sponsor: "PlaceHolder3",
         logo: placeHolderLogo,
+        isPlaceHolder: true,
         text: `Coming Soon`
     },
 ];

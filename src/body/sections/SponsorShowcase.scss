@@ -50,18 +50,29 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  height: 500px;
+  min-height: 500px;
   .sponsor-logo {
     width: 100%;
-    min-height: 100px;
+    min-height: 120px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+  .sponsor-logo-active {
+    background-position: left;
+    min-height:40px;
+    transition: transform 300ms;
+  }
+  .player {
+    padding: 0%;
+    margin: 0%;
   }
   p {
-    @include helvetica();
+    @include open-sans();
     font-size: medium;
     height: fit-content;
+    text-align: justify;
     @media screen and (max-width: 1024px){
       font-size: small;
     }

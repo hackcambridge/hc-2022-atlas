@@ -7,7 +7,7 @@ function App() {
   const navElements = [
     {name: "About Us", href: "#about-us"},
     {name: "FAQ", href: "#faq"},
-    {name: "Our Sponsors", href: "#sponsors"},
+    {name: "Our Sponsors", href: "#sponsor-showcase"},
     {name: "Meet the team", href: "#team"}
   ];
   return (
