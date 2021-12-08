@@ -198,16 +198,10 @@ const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
         text: `Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have more than 194,000 employees, and we operate in more than 170 countries and regions, serving more than three billion people around the world. Huawei is a private company wholly owned by its employees. Through the Union of Huawei Investment & Holding Co., Ltd., we implement an Employee Shareholding Scheme involving 104,572 employees. Only Huawei employees are eligible to participate. No government agency or outside organization holds shares in Huawei.`
     },
     {
-        sponsor: "PlaceHolder2",
+        sponsor: "PlaceHolder",
         logo: placeHolderLogo,
         isPlaceHolder: true,
         text: "Coming Soon"
-    },
-    {
-        sponsor: "PlaceHolder3",
-        logo: placeHolderLogo,
-        isPlaceHolder: true,
-        text: `Coming Soon`
     },
 ];
 
