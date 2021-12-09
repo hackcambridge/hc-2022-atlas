@@ -25,7 +25,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
     const {width, height} = useWindowResize();
     return (
         <div className="Sponsors" id="sponsors">
-            <h1>Our Sponsors</h1>
+            {/* <h1>Our Sponsors</h1> */}
             <h2>Cohost</h2>
             <Fade left>
             <HexGrid className={"hex-one-only"} info={[{

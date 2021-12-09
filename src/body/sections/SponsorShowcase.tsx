@@ -59,7 +59,8 @@ export default function SponsorShowcase({ sponsors }: SponsorShowcaseProps) {
   return (
     <Fade top>
     <div className="SponsorShowcase">
-      <h1>Sponsor Showcase</h1>
+      {/* <h1>Sponsor Showcase</h1> */}
+      <h1>Our Sponsors</h1>
       <div className="slider-container">
         <Slider
           slidesToShow={width < 600 ? 1 : 3}
