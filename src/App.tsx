@@ -2,6 +2,7 @@ import logo from "./shared/img/Logo_White.png";
 import './App.scss';
 import Header from './header/containers/Header';
 import Home from './shared/containers/Home';
+import MLHBanner from "./header/components/MLHBanner";
 
 function App() {
   const navElements = [
@@ -12,6 +13,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <MLHBanner />
       <Header logoPath={logo} navElements={navElements}/>
       {/* <Router> */}
         <Home path='/'/>
