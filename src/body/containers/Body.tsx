@@ -51,6 +51,9 @@ import featurespace3 from '../../shared/img/sponsors/featurespace3.png';
 import hrt from '../../shared/img/sponsors/HRT.svg';
 import bigpay from '../../shared/img/sponsors/Bigpay.svg';
 import deepgram from '../../shared/img/sponsors/deepgram.svg';
+import optiver from '../../shared/img/sponsors/optiver.png';
+import blackrock from '../../shared/img/sponsors/BLK_eng_black_rgb.png';
+import theodo from '../../shared/img/sponsors/theodo.png';
 
 import Timeline from "../sections/Timeline";
 import SponsorShowcase, { SponsorShowcaseInfo } from "../sections/SponsorShowcase";
@@ -94,11 +97,11 @@ const tera : Sponsor[] = [
         isPlaceHolder: false
     },
     {
-        name: "Something else",
-        tier: '',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "Optiver",
+        tier: 'Tera',
+        href: 'https://www.optiver.com/',
+        image: optiver,
+        isPlaceHolder: false
     }
 ];
 
@@ -118,11 +121,11 @@ const giga: Sponsor[] = [
         isPlaceHolder: false
     },
     {
-        name: "Something2",
-        tier: '',
-        href: '',
-        image: placeHolderLogo,
-        isPlaceHolder: true
+        name: "BlackRock",
+        tier: 'Giga',
+        href: 'https://careers.blackrock.com/early-careers/',
+        image: blackrock,
+        isPlaceHolder: false
     },
 ];
 
@@ -162,6 +165,20 @@ const mega: Sponsor[] = [
         image: bigpay,
         isPlaceHolder: false
     },
+    {
+        name: "Theodo",
+        tier: "Mega",
+        href: "https://www.theodo.co.uk/",
+        image: theodo,
+        isPlaceHolder: false
+    },
+    {
+        name: "Something",
+        tier: "",
+        href: "",
+        image: placeHolderLogo,
+        isPlaceHolder: true
+    }
 ];
 
 const kilo: Sponsor[] = [
@@ -198,10 +215,10 @@ const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
         text: `Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have more than 194,000 employees, and we operate in more than 170 countries and regions, serving more than three billion people around the world. Huawei is a private company wholly owned by its employees. Through the Union of Huawei Investment & Holding Co., Ltd., we implement an Employee Shareholding Scheme involving 104,572 employees. Only Huawei employees are eligible to participate. No government agency or outside organization holds shares in Huawei.`
     },
     {
-        sponsor: "PlaceHolder",
-        logo: placeHolderLogo,
-        isPlaceHolder: true,
-        text: "Coming Soon"
+        sponsor: "Optiver",
+        logo: optiver,
+        videoLink: "https://hc-upload.s3.eu-west-2.amazonaws.com/sponsor-videos/optiver.mp4",
+        text: "Optiver is a leading global trading firm powered by technical innovation. For 35+ years, Optiver has been improving financial markets around the world, making them healthier and more efficient for all participants. With our focus on cutting-edge engineering, data science and research, we actively trade on 50+ exchanges, where we’re trusted to always provide accurate buy and sell pricing – no matter the market conditions. To be not only active, but also precise, across such a volume of markets and products is a hugely complex challenge, which is exactly what we thrive on."
     },
 ];
 
@@ -312,9 +329,9 @@ const committeInfo = [
         visible: true
     },
     {
-        image: holly,
+        image: komal,
         caption: "Head of Design",
-        title: "Holly",
+        title: "Komal",
         visible: true
     },
     {
@@ -360,9 +377,9 @@ const committeInfo = [
         visible: true
     },
     {
-        image: komal,
+        image: holly,
         caption:"Design",
-        title: "Komal",
+        title: "Holly",
         visible: true
     },
     {

@@ -64,7 +64,7 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
                 image: sponsor.image,
                 visible: true,
                 href: sponsor.href
-            }})} layoutInfo={{nHexaBig: 5, nHexaMed: 5, nHexaSmall: 5, baseSize:(width < 600)? "100vw": "50vw"}}/>
+            }})} layoutInfo={{nHexaBig: 7, nHexaMed: 7, nHexaSmall: 7, baseSize:(width < 600)? "100vw": "70vw"}}/>
             </Fade>
             <h2>Kilo</h2>
             <Fade left>
