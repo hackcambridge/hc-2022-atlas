@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal';
 
 // Format is MM/DD/YYYY
-export const targetDate = new Date('12/20/2021');
+export const targetDate = new Date('12/21/2021');
 
 export type LandingProps = {
     name?: string;
