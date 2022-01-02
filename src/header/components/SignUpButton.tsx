@@ -7,6 +7,6 @@ export type SignUpButtonProps = {
 
 export default function SignUpButton({href}: SignUpButtonProps) {
     return (
-        <a href={href} className="SignUp">Apply today!</a>
+        <a href={href} className="SignUp">Hacker's portal</a>
     );
 }

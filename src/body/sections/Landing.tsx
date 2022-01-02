@@ -12,12 +12,13 @@ export const targetDate = new Date('01/02/2022');
 export type LandingProps = {
     name?: string;
     href: string;
+    applicationsOpen: boolean;
 };
 
 /**
  * Landing Section
  */
-export default function Landing({name, href}: LandingProps) {
+export default function Landing({name, href, applicationsOpen}: LandingProps) {
     // TODO: Move state up to Landing and define all the constants here
     return (
         <div className="Landing">
@@ -43,7 +44,8 @@ export default function Landing({name, href}: LandingProps) {
                     <div className="landing-col2">
                         {/* <LightBulb /> */}
                         <Timer targetDate={targetDate} until={"Applications Close"}/>
-                        <a href={href} className="apply-button">Apply today!</a>
+                        {applicationsOpen && <a href={href} className="apply-button">Apply today!</a>}
+                        {!applicationsOpen && <a href="/" className="apply-button apps-closed">Applications closed</a>}
                     </div>
             </div>
             
