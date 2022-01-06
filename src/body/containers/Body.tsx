@@ -55,6 +55,9 @@ import optiver from '../../shared/img/sponsors/optiver.png';
 import blackrock from '../../shared/img/sponsors/BLK_eng_black_rgb.png';
 import theodo from '../../shared/img/sponsors/theodo.png';
 
+import hcuk from '../../shared/img/sponsors/HackathonUK.svg';
+import mlh from '../../shared/img/sponsors/mlh-logo-color.svg';
+
 import Timeline from "../sections/Timeline";
 import SponsorShowcase, { SponsorShowcaseInfo } from "../sections/SponsorShowcase";
 
@@ -189,6 +192,30 @@ const kilo: Sponsor[] = [
         image: wolfram,
         isPlaceHolder: false
     },
+];
+
+const partners: Sponsor[] = [
+    {
+        name: "MLH",
+        tier: '',
+        href: 'https://mlh.io/',
+        image: mlh,
+        isPlaceHolder: false
+    },
+    {
+        name: "Hackathons UK",
+        tier: '',
+        image: hcuk,
+        href: "https://hackathons.org.uk/",
+        isPlaceHolder: false
+    }, 
+    {
+        name: "Placeholder",
+        tier: "",
+        href: "",
+        image: placeHolderLogo,
+        isPlaceHolder: true
+    }
 ];
 
 const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
@@ -408,16 +435,18 @@ const committeInfo = [
 const linkToJoin = 'https://forms.gle/2rNYCxYPBcUXQ7EC8';
 const linkToApply = '/apply';
 
+const applicationsOpen = false;
+
 export default function Body(props: BodyProp) {
     return (
         <div className="Body">
-            <Landing href={linkToApply}/>
+            <Landing href={linkToApply} applicationsOpen={applicationsOpen}/>
             <Timeline timelinePhoto={timeline}/>
             <AboutUs />
             <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />
             <SponsorShowcase sponsors={sponsorShowcaseInfo}/>
-            <Sponsors cohost={cohost} tera={tera} giga={giga} mega={mega} kilo={kilo}/>
+            <Sponsors cohost={cohost} tera={tera} giga={giga} mega={mega} kilo={kilo} partners={partners}/>
             {/* <PastHackathons /> */}
             <Committee committeeInfo={committeInfo} linkToJoin={linkToJoin}/>
         </div>

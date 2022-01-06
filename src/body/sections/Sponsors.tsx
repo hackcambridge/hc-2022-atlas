@@ -18,9 +18,10 @@ export type SponsorsProps = {
     giga: Sponsor[];
     mega: Sponsor[];
     kilo: Sponsor[];
+    partners: Sponsor[];
 };
 
-export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps) {
+export default function Sponsors({cohost, tera, giga, mega, kilo, partners}: SponsorsProps) {
     // eslint-disable-next-line
     const {width, height} = useWindowResize();
     return (
@@ -75,6 +76,16 @@ export default function Sponsors({cohost, tera, giga, mega, kilo}: SponsorsProps
                 visible: true,
                 href: sponsor.href
             }})} layoutInfo={{nHexaBig: 1, nHexaMed: 1, nHexaSmall: 1, baseSize:(width < 600)? "40vw": "10vw"}}/>
+            </Fade>
+            <h2>Our Partners</h2>
+            <Fade left>
+            <HexGrid info={partners.map(sponsor => {return {
+                title: sponsor.isPlaceHolder? "And we are 'self-partnered'": sponsor.name,
+                caption: "",
+                image: sponsor.image,
+                visible: true,
+                href: sponsor.href
+            }})} layoutInfo={{nHexaBig: 3, nHexaMed: 3, nHexaSmall: 3, baseSize:(width < 600)? "80vw": "60vw"}}/>
             </Fade>
         </div>
     );
