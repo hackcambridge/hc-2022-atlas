@@ -10,6 +10,7 @@ import Sponsors, { Sponsor } from "../sections/Sponsors";
 import './Body.scss';
 
 import timeline from '../../shared/img/Timeline.png';
+import timeline2 from '../../shared/img/Timeline2.png';
 
 import hc2016 from "../../shared/img/past-photos/hc-2016-1.jpg";
 import hc2017 from "../../shared/img/past-photos/hc-2017-1.jpg";
@@ -426,7 +427,7 @@ export default function Body(props: BodyProp) {
     return (
         <div className="Body">
             <Landing href={linkToApply} applicationsOpen={applicationsOpen}/>
-            <Timeline timelinePhoto={timeline}/>
+            <Timeline timelinePhoto={timeline2}/>
             <AboutUs />
             <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />
