@@ -51,7 +51,7 @@ import wolfram from '../../shared/img/sponsors/wolfram.png';
 import featurespace3 from '../../shared/img/sponsors/featurespace3.png';
 import hrt from '../../shared/img/sponsors/HRT.svg';
 import bigpay from '../../shared/img/sponsors/Bigpay.svg';
-import deepgram from '../../shared/img/sponsors/deepgram.svg';
+import deepgram from '../../shared/img/sponsors/deepgram2.svg';
 import optiver from '../../shared/img/sponsors/optiver.png';
 import blackrock from '../../shared/img/sponsors/BLK_eng_black_rgb.png';
 import theodo from '../../shared/img/sponsors/theodo.png';
@@ -286,6 +286,21 @@ const faqQuestions = [
         answer: "Absolutely! Participation is free for all invited hackers. We provide interesting workshops, entertaining activties, and some swag during the event.",
         folded: true
     },
+    {
+        question: "What is the Code of Conduct for Hack Cambridge Atlas?",
+        answer: `We follow the Code of Conduct from MLH: https://mlh.io/code-of-conduct.`,
+        folded: true
+    },
+    {
+        question: "What is your current covid-19 policies if I am attending the event in-person?",
+        answer: `Your registration, RSVP, fully-vaccinated status (or exemption) AND a negative result for a Covid-19 test taken within 24 hours of the event entitles you to admittance to the in-person HackCambridge Atlas event. Rather than using COVID Pass, we require a text or email notification of your test from NHS Test and Trace as a condition of entry*.
+        Registration opens at 0900 on Saturday the 22nd of January. We require you to have taken a negative PCR or rapid lateral flow test within 24 hours of the event, preferably within 12 hours. As our event is >30 hours long, we will not accept tests taken on Thursday, even if they are within 48 hours of registration. The Government advises that “to strengthen the protection testing provides you should take tests as late as possible before attending the event, ideally within 12 hours”
+        Fully-vaccinated status means that you you are vaccinated with 2 doses of an approved vaccine (or one of the single-dose Janssen vaccine). As we will check proof of a negative test for all attendees, we won’t require you to present us proof of your fully vaccinated status. However, by attending our in-person event you declare that you do meet the criteria outlined above. The vaccines approved in the UK can be found on the government website: https://www.gov.uk/guidance/countries-with-approved-covid-19-vaccination-programmes-and-proof-of-vaccination.
+        *You may be exempt from either or both of our COVID requirements. If you declare you are exempt from testing, we will check your NHS COVID Pass.
+        We would require you to prepare at least two sets of lateral flow test kit (one for entering the event venue and one more as a back up in case of emergency/if you leave the venue during the event). We would require the result of LFT to be reported to NHS thus your test kits must be the NHS-approved ones. More details on this will come together with the event invitation. There have been news articles about the shortage of LFTs, thus we would encourage you to prepare the kits in advance - especially if you are arriving in Cambridge very close to the event. You can use the NHS website to find out where to get rapid lateral flow tests.
+        `,
+        folded: true
+    }
 ];
 
 const pastPhotos = [

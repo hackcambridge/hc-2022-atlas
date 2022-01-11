@@ -130,6 +130,17 @@
     .apps-closed {
         background-color: rgba(95, 95, 95, 0.973);
     }
+    .apps-wl {
+        background-color: transparent;
+        font-size: large;
+        padding: .5vw;
+        margin-top: 10px;
+        &:hover {
+            color: $green;
+            text-decoration: underline;
+            background-color: inherit;
+        }
+    }
 }
 
 

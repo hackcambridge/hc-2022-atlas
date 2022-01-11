@@ -31,7 +31,8 @@ export default function FAQTextBox({
         </button>
         <Collapse isOpened={!folded}>
           <div className="text">
-            <div>{answer}</div>
+          {answer.split('\n').map((line => <div>{line}</div>))}
+            {/* <div>{answer}</div> */}
           </div>
         </Collapse>
       </div>

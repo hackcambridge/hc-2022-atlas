@@ -45,11 +45,14 @@ export default function Landing({name, href, applicationsOpen}: LandingProps) {
                         {/* <LightBulb /> */}
                         <Timer targetDate={targetDate} until={"Applications Close"}/>
                         {applicationsOpen && <a href={href} className="apply-button">Apply today!</a>}
-                        {!applicationsOpen && <a href="/" className="apply-button apps-closed">Applications closed</a>}
+                        {!applicationsOpen && (
+                        <>
+                        <a href="/" className="apply-button apps-closed">Applications closed</a>
+                        <a href="/apply" className="apply-button apps-wl">Join Waiting List</a>
+                        </>
+                        )}
                     </div>
             </div>
-            
-
         </div>
     );
 }
