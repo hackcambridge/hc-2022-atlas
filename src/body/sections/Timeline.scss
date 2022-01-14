@@ -8,6 +8,11 @@
         font-size: calc(min(0.7in, 8vw));
         padding-left: 10%;
     }
+    .Timeline__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     img {
         max-width: 100%;
     }

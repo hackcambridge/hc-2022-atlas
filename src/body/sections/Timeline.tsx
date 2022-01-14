@@ -11,7 +11,9 @@ export default function Timeline({ timelinePhoto }: TimelineProps) {
     <Fade down>
       <div className="Timeline">
         <h1>Where to start..</h1>
-        <img src={timelinePhoto} alt="Timeline" />
+        <div className="Timeline__image">
+          <img src={timelinePhoto} alt="Timeline" />
+        </div>
       </div>
     </Fade>
   );
