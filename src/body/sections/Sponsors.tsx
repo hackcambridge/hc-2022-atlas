@@ -6,7 +6,7 @@ import { useWindowResize } from '../../shared/util/useWindowResize';
 
 export type Sponsor = {
     name: string,
-    tier: 'Cohost'|'Tera'|'Giga' | 'Giga + Meal' |'Mega'|'Mega + Meal' | 'Mega + Coffee'|'Kilo'|'',
+    tier: 'Cohost'|'Tera'|'Giga' | 'Giga + Meal' |'Mega'|'Mega + Meal' | 'Mega + Coffee'|'Kilo'| 'Meal' | '',
     image: string,
     href: string,
     isPlaceHolder: boolean
@@ -18,10 +18,11 @@ export type SponsorsProps = {
     giga: Sponsor[];
     mega: Sponsor[];
     kilo: Sponsor[];
+    meal: Sponsor[];
     partners: Sponsor[];
 };
 
-export default function Sponsors({cohost, tera, giga, mega, kilo, partners}: SponsorsProps) {
+export default function Sponsors({cohost, tera, giga, mega, kilo, meal, partners}: SponsorsProps) {
     // eslint-disable-next-line
     const {width, height} = useWindowResize();
     return (
@@ -70,6 +71,16 @@ export default function Sponsors({cohost, tera, giga, mega, kilo, partners}: Spo
             <h2>Kilo</h2>
             <Fade left>
             <HexGrid className={"hex-one-only"} info={kilo.map(sponsor => {return {
+                title: sponsor.isPlaceHolder? "Coming soon": sponsor.name,
+                caption: sponsor.tier,
+                image: sponsor.image,
+                visible: true,
+                href: sponsor.href
+            }})} layoutInfo={{nHexaBig: 1, nHexaMed: 1, nHexaSmall: 1, baseSize:(width < 600)? "40vw": "10vw"}}/>
+            </Fade>
+            <Fade right>
+            <h2>Meal</h2>
+            <HexGrid className={"hex-one-only"} info={meal.map(sponsor => {return {
                 title: sponsor.isPlaceHolder? "Coming soon": sponsor.name,
                 caption: sponsor.tier,
                 image: sponsor.image,

@@ -41,6 +41,7 @@ import placeHolderLogo from '../../shared/img/Logo_White.png';
 import mw from '../../shared/img/sponsors/marshall_wace_blue.png';
 import reply from '../../shared/img/sponsors/reply_logo.svg';
 import huawei from '../../shared/img/sponsors/huawei2.png';
+import datascope from '../../shared/img/sponsors/datascope.jpg';
 // import citadel from '../../shared/img/sponsors/citadel.png';
 import graphcore from '../../shared/img/sponsors/graphcore.png';
 import gresearch from '../../shared/img/sponsors/g-research.png';
@@ -219,6 +220,17 @@ const partners: Sponsor[] = [
     }
 ];
 
+const meal: Sponsor[] = [
+    {
+        name: "Datascope",
+        tier: 'Meal',
+        href: 'https://datascope.co.uk/',
+        image: datascope,
+        isPlaceHolder: false
+    },
+];
+
+
 const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
     {
         sponsor: "Marshall Wace",
@@ -250,6 +262,7 @@ const sponsorShowcaseInfo: SponsorShowcaseInfo[] = [
         text: "Optiver is a leading global trading firm powered by technical innovation. For 35+ years, Optiver has been improving financial markets around the world, making them healthier and more efficient for all participants. With our focus on cutting-edge engineering, data science and research, we actively trade on 50+ exchanges, where we’re trusted to always provide accurate buy and sell pricing – no matter the market conditions. To be not only active, but also precise, across such a volume of markets and products is a hugely complex challenge, which is exactly what we thrive on."
     },
 ];
+
 
 const faqQuestions = [
     {
@@ -448,7 +461,7 @@ export default function Body(props: BodyProp) {
             <PastPhotos items={pastPhotos}/>
             <FAQ qs={faqQuestions} />
             <SponsorShowcase sponsors={sponsorShowcaseInfo}/>
-            <Sponsors cohost={cohost} tera={tera} giga={giga} mega={mega} kilo={kilo} partners={partners}/>
+            <Sponsors cohost={cohost} tera={tera} giga={giga} mega={mega} kilo={kilo} meal={meal} partners={partners}/>
             {/* <PastHackathons /> */}
             <Committee committeeInfo={committeInfo} linkToJoin={linkToJoin}/>
         </div>
